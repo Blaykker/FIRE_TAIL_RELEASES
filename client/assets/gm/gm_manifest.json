@@ -1,0 +1,541 @@
+{
+ "sGem_Amethist": {
+  "frames": 1,
+  "w": 24,
+  "h": 24,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sGem_Amethist"
+ },
+ "sGem_Saphire": {
+  "frames": 1,
+  "w": 24,
+  "h": 24,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sGem_Saphire"
+ },
+ "sGem_Emerald": {
+  "frames": 4,
+  "w": 24,
+  "h": 24,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/sGem_Emerald"
+ },
+ "sGem_Ruby": {
+  "frames": 4,
+  "w": 24,
+  "h": 24,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/sGem_Ruby"
+ },
+ "sGem_Diamond": {
+  "frames": 4,
+  "w": 24,
+  "h": 24,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/sGem_Diamond"
+ },
+ "sMineral_Stone_Iron": {
+  "frames": 2,
+  "w": 16,
+  "h": 16,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sMineral_Stone_Iron"
+ },
+ "sMineral_Stone_Gold": {
+  "frames": 2,
+  "w": 16,
+  "h": 16,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sMineral_Stone_Gold"
+ },
+ "sMineral_Stone_Saphire": {
+  "frames": 2,
+  "w": 16,
+  "h": 16,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sMineral_Stone_Saphire"
+ },
+ "sMineral_Stone_Amethist": {
+  "frames": 2,
+  "w": 16,
+  "h": 16,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sMineral_Stone_Amethist"
+ },
+ "sMineral_Gold": {
+  "frames": 1,
+  "w": 24,
+  "h": 24,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sMineral_Gold"
+ },
+ "sIron": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sIron"
+ },
+ "sIronOre": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sIronOre"
+ },
+ "sStone": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sStone"
+ },
+ "sWood": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sWood"
+ },
+ "sSeed_Pura": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sSeed_Pura"
+ },
+ "sPura_Flor": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sPura_Flor"
+ },
+ "sShovel": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sShovel"
+ },
+ "sPickaxe": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sPickaxe"
+ },
+ "sTorch": {
+  "frames": 1,
+  "w": 32,
+  "h": 32,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sTorch"
+ },
+ "sHeart": {
+  "frames": 2,
+  "w": 12,
+  "h": 12,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sHeart"
+ },
+ "sBackpack": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sBackpack"
+ },
+ "sApple": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sApple"
+ },
+ "sPotion_Red": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sPotion_Red"
+ },
+ "arrow": {
+  "frames": 5,
+  "w": 16,
+  "h": 16,
+  "cols": 5,
+  "source": "GameMaker FIRE_TAIL/sprites/arrow"
+ },
+ "bow": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/bow"
+ },
+ "sBlock_Stone": {
+  "frames": 2,
+  "w": 16,
+  "h": 32,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sBlock_Stone"
+ },
+ "sFloor": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sFloor"
+ },
+ "sFloorTexture": {
+  "frames": 1,
+  "w": 256,
+  "h": 256,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sFloorTexture"
+ },
+ "spr_mushroom": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_mushroom"
+ },
+ "sStone_Box": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sStone_Box"
+ },
+ "sKey": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sKey"
+ },
+ "sFeather": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sFeather"
+ },
+ "sScissors": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sScissors"
+ },
+ "sCoin": {
+  "frames": 8,
+  "w": 16,
+  "h": 16,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/sCoin"
+ },
+ "sRock": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sRock"
+ },
+ "sBush": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sBush"
+ },
+ "sTree": {
+  "frames": 1,
+  "w": 16,
+  "h": 32,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sTree"
+ },
+ "s_Relic_Skull": {
+  "frames": 8,
+  "w": 24,
+  "h": 28,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/s_Relic_Skull"
+ },
+ "sPyramid": {
+  "frames": 1,
+  "w": 128,
+  "h": 128,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sPyramid"
+ },
+ "sMinerals": {
+  "frames": 10,
+  "w": 24,
+  "h": 24,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/sMinerals"
+ },
+ "sMinerals_Loot": {
+  "frames": 16,
+  "w": 16,
+  "h": 16,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/sMinerals_Loot"
+ },
+ "spr_Tileset_Blocks": {
+  "frames": 48,
+  "w": 16,
+  "h": 32,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_Tileset_Blocks"
+ },
+ "sBlock_Stone_TileSet": {
+  "frames": 48,
+  "w": 16,
+  "h": 32,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/sBlock_Stone_TileSet"
+ },
+ "sDung_stair": {
+  "frames": 6,
+  "w": 16,
+  "h": 19,
+  "cols": 6,
+  "source": "GameMaker FIRE_TAIL/sprites/sDung_stair"
+ },
+ "spr_Custom_trees_1": {
+  "frames": 4,
+  "w": 64,
+  "h": 64,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_Custom_trees_1"
+ },
+ "spr_Custom_trees_2": {
+  "frames": 4,
+  "w": 32,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_Custom_trees_2"
+ },
+ "spr_Custom_trees_3": {
+  "frames": 4,
+  "w": 48,
+  "h": 48,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_Custom_trees_3"
+ },
+ "sCoin_Inv": {
+  "frames": 8,
+  "w": 16,
+  "h": 16,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/sCoin_Inv"
+ },
+ "pickaxe___stone_": {
+  "frames": 12,
+  "w": 32,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/pickaxe___stone_"
+ },
+ "pickaxe___iron_": {
+  "frames": 12,
+  "w": 32,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/pickaxe___iron_"
+ },
+ "pickaxe___gold_": {
+  "frames": 12,
+  "w": 32,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/pickaxe___gold_"
+ },
+ "pickaxe___diamond_": {
+  "frames": 12,
+  "w": 32,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/pickaxe___diamond_"
+ },
+ "sBlock_Stone_1": {
+  "frames": 2,
+  "w": 16,
+  "h": 32,
+  "cols": 2,
+  "source": "GameMaker FIRE_TAIL/sprites/sBlock_Stone_1"
+ },
+ "spr_iron_helmet": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_iron_helmet"
+ },
+ "spr_hat": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_hat"
+ },
+ "leather_boots": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/leather_boots"
+ },
+ "torch": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/torch"
+ },
+ "sLamp_Stone": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/sLamp_Stone"
+ },
+ "blue_mushroom_sheet": {
+  "frames": 1,
+  "w": 112,
+  "h": 128,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/blue_mushroom_sheet"
+ },
+ "brown_mushroom_sheet": {
+  "frames": 56,
+  "w": 16,
+  "h": 16,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/brown_mushroom_sheet"
+ },
+ "Trees_1": {
+  "frames": 9,
+  "w": 48,
+  "h": 72,
+  "cols": 8,
+  "source": "GameMaker FIRE_TAIL/sprites/Trees_1"
+ },
+ "spr_grass_2dig": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_grass_2dig"
+ },
+ "spr_dirt_2dig": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_dirt_2dig"
+ },
+ "spr_sand_2dig": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_sand_2dig"
+ },
+ "spr_stone_2dig": {
+  "frames": 1,
+  "w": 8,
+  "h": 8,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_stone_2dig"
+ },
+ "spr_water_2dig": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_water_2dig"
+ },
+ "arrow_stone": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "Sprite da flecha de pedra enviada pelo Pablo (conversa v0.4)"
+ },
+ "spr_pickaxe": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "GameMaker FIRE_TAIL/sprites/spr_pickaxe"
+ },
+ "ft_wheat": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "PROVIS\u00d3RIO v0.4 (tools/gen_item_icons.py) \u2014 substituir por sprite do Pablo"
+ },
+ "ft_wheatseed": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "PROVIS\u00d3RIO v0.4 (tools/gen_item_icons.py) \u2014 substituir por sprite do Pablo"
+ },
+ "ft_sickle": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "PROVIS\u00d3RIO v0.4 (tools/gen_item_icons.py) \u2014 substituir por sprite do Pablo"
+ },
+ "ft_bread": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "PROVIS\u00d3RIO v0.4 (tools/gen_item_icons.py) \u2014 substituir por sprite do Pablo"
+ },
+ "ft_page": {
+  "frames": 1,
+  "w": 16,
+  "h": 16,
+  "cols": 1,
+  "source": "PROVIS\u00d3RIO v0.4 (tools/gen_item_icons.py) \u2014 substituir por sprite do Pablo"
+ },
+ "portal_green": {
+  "frames": 23,
+  "w": 64,
+  "h": 64,
+  "cols": 23,
+  "source": "GameMaker FIRE_TAIL/sprites/Green_Portal_Sprite_Sheet"
+ },
+ "merchant_idle": {
+  "frames": 4,
+  "w": 48,
+  "h": 48,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/idle (oNPC_Merchant)"
+ },
+ "merchant_walk": {
+  "frames": 4,
+  "w": 48,
+  "h": 48,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/walk (oNPC_Merchant)"
+ },
+ "sTemple_Shooter": {
+  "frames": 4,
+  "w": 16,
+  "h": 32,
+  "cols": 4,
+  "source": "GameMaker FIRE_TAIL/sprites/sTemple_Shooter"
+ }
+}

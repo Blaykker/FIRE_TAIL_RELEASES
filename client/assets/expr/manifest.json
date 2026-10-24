@@ -1,0 +1,56 @@
+{
+ "hit": [
+  "hit_0.webp",
+  "hit_1.webp",
+  "hit_2.webp",
+  "hit_3.webp"
+ ],
+ "hurt": [
+  "hurt_0.webp",
+  "hurt_1.webp",
+  "hurt_2.webp"
+ ],
+ "blind": [
+  "blind_0.webp",
+  "blind_1.webp",
+  "blind_2.webp"
+ ],
+ "possessed": [
+  "possessed_0.webp",
+  "possessed_1.webp",
+  "possessed_2.webp",
+  "possessed_3.webp",
+  "possessed_4.webp"
+ ],
+ "burning": [
+  "burning_0.webp",
+  "burning_1.webp"
+ ],
+ "burned": [
+  "burned_0.webp",
+  "burned_1.webp",
+  "burned_2.webp",
+  "burned_3.webp"
+ ],
+ "dying": [
+  "dying_0.webp",
+  "dying_1.webp"
+ ],
+ "shock": [
+  "shock_0.webp"
+ ],
+ "poisoned": [
+  "poisoned_0.webp",
+  "poisoned_1.webp",
+  "poisoned_2.webp",
+  "poisoned_3.webp"
+ ],
+ "wet": [
+  "wet_0.webp",
+  "wet_1.webp",
+  "wet_2.webp",
+  "wet_3.webp",
+  "wet_4.webp",
+  "wet_5.webp"
+ ]
+}

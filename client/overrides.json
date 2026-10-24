@@ -1,0 +1,755 @@
+{
+  "format": "firetail3d-overrides",
+  "version": 3,
+  "flags": {},
+  "view": {
+    "cutSurface": 1,
+    "cutCave": 1,
+    "zoom": 7
+  },
+  "tune": {
+    "torch": {
+      "brightness": 1.25,
+      "radius": 1.45,
+      "flameSize": 0.95,
+      "flameMin": 0.9,
+      "flameMax": 1.1,
+      "flickerSpeed": 2.2,
+      "flickerAmount": 0.06,
+      "wobble": 0.04,
+      "stepped": 1,
+      "rainOut": 1,
+      "wetDim": 0.6,
+      "shadow": "circle",
+      "sparks": 1.7,
+      "smoke": 0.7,
+      "bands": 6,
+      "dither": 0.75,
+      "shape": 0.7,
+      "sunShadow": 1,
+      "blob": 1,
+      "shDither": 4,
+      "shFadeStart": 0.3,
+      "shColor": "#0a0408",
+      "shadowStick": 0
+    },
+    "fire": {
+      "style": 3,
+      "grid": 18,
+      "speed": 1,
+      "noise": 1.25,
+      "bands": 4,
+      "stretch": 1.2,
+      "inner": "#fff7d1",
+      "mid": "#ff8f29",
+      "outer": "#9e1a14",
+      "embers": 1,
+      "emberSize": 1,
+      "emberSpeed": 1,
+      "emberLife": 1,
+      "smoke": 1,
+      "smokeSize": 1,
+      "smokeLife": 1,
+      "flamelets": 1,
+      "flameletSize": 1,
+      "flameletRise": 1,
+      "orderFlame": 3,
+      "orderEmbers": 5,
+      "orderSmoke": 1,
+      "holes": 3,
+      "holeSize": 1,
+      "holeSpeed": 1,
+      "holeShape": 2,
+      "holeSoft": 0.2,
+      "sway": 1,
+      "swaySpeed": 1,
+      "turb": 1,
+      "unique": 1,
+      "coreK": 1,
+      "bodyK": 1,
+      "edgeK": 1,
+      "emberY": 0,
+      "emberSpread": 1,
+      "emberRand": 0.35,
+      "smokeY": 0,
+      "smokeSpread": 1,
+      "smokeRise": 1,
+      "smokeRand": 0.3,
+      "smokeColor": "#8a8288",
+      "smokeCave": "#3a3238",
+      "smoke2Color": "#2a2024",
+      "smoke2Chance": 0.25,
+      "flameletY": 0,
+      "flameletSpread": 1,
+      "flameletLife": 1,
+      "flameletRand": 0.3
+    },
+    "rain": {
+      "count": 1,
+      "speed": 16,
+      "length": 0.75,
+      "wind": 0,
+      "windDir": 45,
+      "opacity": 1,
+      "color": "#bcd4ff",
+      "splash": 0,
+      "splashCount": 1,
+      "splashSize": 0.55,
+      "splashOnRat": 1,
+      "splashColor": "#dcecff"
+    },
+    "foot": {
+      "on": 1,
+      "life": 7,
+      "opacity": 0.33,
+      "size": 2.35,
+      "sand": 1,
+      "earth": 0,
+      "grass": 0,
+      "snow": 1
+    },
+    "wake": {
+      "on": 1,
+      "width": 3,
+      "length": 1.5,
+      "opacity": 0.15,
+      "splash": 0.3,
+      "ripple": 1
+    },
+    "rat": {
+      "scale": 1.11,
+      "height": 1.11,
+      "width": 1,
+      "head": 0.86,
+      "ears": 1.19,
+      "fur": "#9a5928",
+      "cream": "#f4e6ce",
+      "pink": "#985d5d",
+      "dark": "#2a1a1a",
+      "hue": 0,
+      "sat": 1,
+      "bright": 1,
+      "ao": 0.4,
+      "eyeX": 0.127,
+      "eyeY": 0.14,
+      "eyeZ": 0.064,
+      "eyeScale": 0.86,
+      "lid": 0.5,
+      "brow": 0.3,
+      "browOn": 1,
+      "eyeRotX": 0,
+      "eyeRotY": 0,
+      "eyeRotZ": 0,
+      "scleraX": 1,
+      "scleraY": 1,
+      "scleraZ": 1,
+      "irisSize": 1,
+      "irisH": 1,
+      "irisW": 1,
+      "irisOX": 0,
+      "irisOY": 0,
+      "irisOZ": 0,
+      "browX": 0,
+      "browY": 0,
+      "browZ": 0,
+      "browTilt": 0,
+      "browYaw": 0,
+      "browLen": 1,
+      "browThick": 1,
+      "turnStart": 22,
+      "turnSteps": 1.4,
+      "turnSpeed": 1.3
+    },
+    "blocks": {
+      "ao": 1,
+      "sideShade": 1,
+      "lip": 1,
+      "holeDepth": 0.14,
+      "shoreOrg": 1,
+      "shoreAmp": 1,
+      "shoreScale": 1,
+      "shoreRound": 1,
+      "holeOrg": 1,
+      "holeAmp": 1,
+      "holeScale": 1,
+      "holeRound": 0.9,
+      "wallOrg": 1,
+      "wallDrip": 1,
+      "wallScale": 1,
+      "wallLine": 0.6,
+      "wallShade": 0.75,
+      "wallGeo": 1,
+      "wallAmp": 0.07,
+      "wallFreq": 1,
+      "wallSub": 4,
+      "orgKinds": "earth,stone,ore",
+      "dripKinds": "earth",
+      "organic": 1,
+      "orgAmp": 0.7,
+      "orgScale": 1.6
+    },
+    "hide": {
+      "color": "#9cff9c",
+      "opacity": 0.16,
+      "dither": 0,
+      "pulse": 1,
+      "outline": 1,
+      "rainbow": 0
+    },
+    "ui": {
+      "dotSize": 9,
+      "dotRound": 50,
+      "dotColor": "#f0b030",
+      "lineOp": 0.4,
+      "lineDash": 3,
+      "selOp": 1,
+      "selColor": "#f0a020"
+    },
+    "expr": {
+      "pixel": 0,
+      "pixelSize": 96,
+      "hue": 0,
+      "sat": 1,
+      "contrast": 1,
+      "palette": 0
+    },
+    "tail": {
+      "distance": 1.8,
+      "fluid": 0.925,
+      "wave": 2.6,
+      "drag": 2.1,
+      "follow": 2,
+      "torchSize": 0.8
+    },
+    "grid": {
+      "opacity": 0.09,
+      "thickness": 0.5,
+      "inset": 0.0625,
+      "trim": 0.125,
+      "trimMode": 0,
+      "invert": 0,
+      "color": "#ffffff",
+      "blend": 3,
+      "radius": 5.5,
+      "softness": 0.5
+    },
+    "outline": {
+      "width": 1,
+      "color": "#140a0c",
+      "mode": 0,
+      "colors": "#140a0c,#5a1a2a,#140a0c",
+      "anim": 0,
+      "animType": 1,
+      "speed": 1,
+      "intensity": 1,
+      "bodyWidth": 1,
+      "bodyColor": "#140a0c"
+    },
+    "target": {
+      "pulse": 1
+    },
+    "hover": {
+      "rainbow": 1,
+      "color": "#ffffff",
+      "colors": "#ffffff,#ffd27a,#ff7a3a",
+      "speed": 1
+    },
+    "camera": {
+      "pitch": 40,
+      "yaw": 0,
+      "roll": 0
+    },
+    "decor": {
+      "flame": 1,
+      "light": 1.05,
+      "radius": 1.2,
+      "flicker": 1.2,
+      "embers": 1,
+      "smoke": 1,
+      "flamelets": 1
+    },
+    "grass": {
+      "small": 3,
+      "smallH": 0.9,
+      "smallW": 0.7,
+      "smallVar": 1.7,
+      "tall": 17,
+      "tallH": 1.2,
+      "tallW": 1.1,
+      "tallVar": 1.2,
+      "bend": 1,
+      "bendR": 1,
+      "wind": 1
+    },
+    "gridsel": {
+      "fill": 0.08,
+      "line": 0.37,
+      "inset": 1,
+      "width": 1,
+      "arm": 5,
+      "pulse": 0.28
+    },
+    "dust": {
+      "on": 1,
+      "amount": 1,
+      "size": 0.7,
+      "back": 0.19,
+      "push": 0.3,
+      "spread": 0.3,
+      "rise": 0.25,
+      "life": 0.7
+    },
+    "tflame": {
+      "drag": 1,
+      "lag": 1,
+      "lagSpeed": 1,
+      "maxBend": 0.55,
+      "flatten": 0.4,
+      "walkTilt": 1,
+      "walkSway": 1,
+      "runTilt": 1.6,
+      "runSway": 1.4
+    },
+    "night": {
+      "moon": 1.33,
+      "moonColor": "#7f95d6",
+      "moonSun": 1.77,
+      "ratLight": 0.77,
+      "ratLightR": 7.7,
+      "ratLightColor": "#9ab4ff",
+      "torchNight": 0.77,
+      "soft": 0.52,
+      "transition": 0.95,
+      "dither": 0.55,
+      "lift": 0.01,
+      "rainDark": 0.33
+    },
+    "sea": {
+      "foam": 1,
+      "shoreOp": 1,
+      "shoreW": 1,
+      "swash": 1,
+      "swashSpeed": 1,
+      "wave": 1,
+      "waveSpeed": 0.7,
+      "bands": 0,
+      "bandSpeed": 1.05,
+      "streak": 1,
+      "opacity": 0.8,
+      "sparkle": 0
+    },
+    "pond": {
+      "foam": 0.55,
+      "shoreOp": 0.7,
+      "shoreW": 0.2,
+      "swash": 0.55,
+      "swashSpeed": 0.8,
+      "wave": 0.25,
+      "waveSpeed": 0,
+      "bands": 0,
+      "bandSpeed": 0.6,
+      "streak": 0.65,
+      "opacity": 0.9,
+      "sparkle": 0
+    },
+    "shadow": {
+      "opacity": 0.85,
+      "soft": 1.5,
+      "blur": 1,
+      "fade": 0.35,
+      "res": 2048,
+      "azimuth": 35,
+      "elevation": 52,
+      "sweep": 50
+    },
+    "tshadow": {
+      "on": 1,
+      "opacity": 0.75,
+      "soft": 8,
+      "decor": 1,
+      "decorOpacity": 0.7,
+      "decorN": 1
+    },
+    "light": {
+      "color": "#ffb070",
+      "objK": 0.75,
+      "groundK": 1.7,
+      "groundR": 1,
+      "areaK": 1.2,
+      "areaR": 3.45,
+      "areaColor": "#ff8a3a",
+      "haloOp": 0.15,
+      "haloSize": 1.65,
+      "haloColor": "#ffb060",
+      "haloSteps": 4,
+      "haloDither": 0.5,
+      "edge": 0.3,
+      "groundExpo": 1,
+      "groundThr": 0.85,
+      "groundKnee": 1,
+      "objExpo": 1,
+      "objThr": 0.9,
+      "objKnee": 0.6
+    },
+    "player": {
+      "model": "lp_mouse"
+    },
+    "aura": {
+      "on": 1,
+      "night": 0.45,
+      "cave": 0.3,
+      "rain": 0.35,
+      "radius": 4.5,
+      "soft": 0.75,
+      "height": 2.6,
+      "dither": 0.3,
+      "color": "#9ab4ff",
+      "caveColor": "#a08ab8",
+      "lamp": 0
+    },
+    "cave": {
+      "amb": 0.32,
+      "ambColor": "#3a3a70",
+      "ground": "#200c10",
+      "bg": "#07040a",
+      "torch": 1,
+      "torchR": 1,
+      "area": 1,
+      "topDark": 0.78,
+      "magic": 0.8,
+      "lift": 0.5,
+      "fireflies": 0.8
+    },
+    "levels": {
+      "on": 1,
+      "surface": 0,
+      "cave": 1,
+      "dark": 0.28,
+      "max": 0.7,
+      "desat": 0.35,
+      "color": "#0b0a16"
+    },
+    "waterLight": {
+      "r": 6,
+      "k": 0.45,
+      "bands": 4,
+      "soft": 0.6,
+      "dither": 0.75,
+      "color": "#ff9a4d"
+    },
+    "ringTorch": {
+      "on": 1,
+      "k": 1.7,
+      "r": 1,
+      "bands": 6,
+      "dither": 0.75,
+      "soft": 0,
+      "edge": 0.3,
+      "shape": 0.7
+    },
+    "ringArea": {
+      "on": 1,
+      "k": 1,
+      "r": 1,
+      "bands": 0,
+      "dither": 0.5,
+      "soft": 1,
+      "edge": 0.4,
+      "shape": 0.3
+    },
+    "ringFire": {
+      "on": 1,
+      "k": 1,
+      "r": 1,
+      "bands": 4,
+      "dither": 0.6,
+      "soft": 0,
+      "edge": 0.3,
+      "shape": 0.5
+    },
+    "ringGlow": {
+      "on": 1,
+      "k": 1,
+      "r": 1,
+      "bands": 3,
+      "dither": 0.6,
+      "soft": 0.3,
+      "edge": 0.4,
+      "shape": 0.3
+    },
+    "ringOther": {
+      "on": 1,
+      "k": 1,
+      "r": 1,
+      "bands": 3,
+      "dither": 0.5,
+      "soft": 0.5,
+      "edge": 0.3,
+      "shape": 0.3
+    },
+    "occ": {
+      "on": 1,
+      "surface": 1,
+      "cave": 1,
+      "radius": 0.13,
+      "soft": 0.45,
+      "dither": 1,
+      "px": 1,
+      "min": 0,
+      "floor": 0.35
+    },
+    "sil": {
+      "on": 0,
+      "surface": 1,
+      "cave": 1,
+      "color": "#ffd27a",
+      "color2": "#ff7a3a",
+      "grad": 0,
+      "opacity": 0.55,
+      "dither": 0,
+      "anim": 0,
+      "speed": 1,
+      "stroke": 1,
+      "strokeW": 1,
+      "ents": 1,
+      "entColors": "frog:#8aff8a,frogking:#8aff8a,frogmonk:#8aff8a,spider:#ff6a5a,centipede:#ff6a5a,skeleton:#e8e0ff,merchant:#ffd27a,*:#ff9a6a",
+      "trigTerrain": 1,
+      "trigTrees": 1,
+      "trigProps": 1
+    },
+    "tilt": {
+      "on": 0,
+      "amount": 1.2,
+      "center": 0.5,
+      "width": 0.32,
+      "soft": 0.35
+    },
+    "pal": {
+      "ditherOn": 1,
+      "ditherLevels": 12,
+      "mix": 0.33,
+      "contrast": 1,
+      "bright": 0,
+      "sat": 1,
+      "hue": 0,
+      "posterize": 0,
+      "ditherScale": 1,
+      "shadowTint": "#0e1614",
+      "shadowTintK": 0.6,
+      "highTint": "#e83b77",
+      "highTintK": 0.02
+    },
+    "swim": {
+      "splashSize": 0.75,
+      "splashCount": 1.3
+    },
+    "prio": {
+      "on": 1,
+      "radius": 3.5,
+      "margin": 0.07
+    }
+  },
+  "hud": {
+    "level": {
+      "dx": 0,
+      "dy": -19,
+      "s": 1.36,
+      "font": "'Trebuchet MS', sans-serif"
+    }
+  },
+  "data": {
+    "gen": {
+      "openness": 0,
+      "wallMax": 3,
+      "chests": 6,
+      "enemyBase": 10,
+      "enemyPerDepth": 2,
+      "shooters": 2,
+      "topStairs": 5,
+      "topThings": 8,
+      "maidenChance": 0.05,
+      "glowChance": 0.35,
+      "boss": true
+    },
+    "shooter": {
+      "speed": 3,
+      "reach": 5.5,
+      "puddleSecs": 8,
+      "puddleRadius": 0.5,
+      "freezeSecs": 3,
+      "struggle": 3,
+      "chainRadius": 2.5,
+      "chainTiles": 40,
+      "dmg": 1
+    },
+    "swim": {
+      "drag": 0.35,
+      "speed": 1
+    },
+    "water": {
+      "uWLDith": 0.75,
+      "uStreak": 0.6,
+      "uShoreW": 0.05,
+      "uBandSpeed": 0.35,
+      "uBandReach": 0.4,
+      "uDepthK": 0.55,
+      "uFoamOp": 1,
+      "uShoreWob": 0.06,
+      "uShoreSpeed": 0.12,
+      "uShoreBreath": 0.016,
+      "uBandCount": 4,
+      "uBandW": 0.07,
+      "uStreakSpeed": 1,
+      "uOpacity": 1,
+      "uSparkle": 1
+    },
+    "waterCol": {
+      "surface": {
+        "shallow": "#46c8c0",
+        "deep": "#1d5a8a"
+      },
+      "cave": {
+        "shallow": "#2a8a9a",
+        "deep": "#0a2a3a"
+      },
+      "foam": "#eafcff"
+    },
+    "refl": {
+      "on": 1,
+      "strength": 0.45,
+      "res": 0.34,
+      "every": 2,
+      "sparkle": 1
+    },
+    "firefly": {
+      "count": 56,
+      "radius": 9,
+      "size": 7,
+      "amount": 1
+    },
+    "atmo": {
+      "hazeK": 1,
+      "nightK": 1,
+      "magicK": 0.7
+    },
+    "ratShadow": {
+      "height": 2.6,
+      "fade": 1.3,
+      "opacity": 0.42
+    },
+    "enemies": {
+      "beetle": {
+        "hp": 6,
+        "speed": 0.046875,
+        "damage": 1,
+        "reach": 0.75,
+        "cooldown": 60,
+        "detectMult": 1,
+        "radius": 0.4,
+        "height": 0.625
+      },
+      "spider": {
+        "hp": 4,
+        "speed": 0.071875,
+        "damage": 1,
+        "reach": 0.7,
+        "cooldown": 45,
+        "detectMult": 1.15,
+        "radius": 0.375,
+        "height": 0.5625
+      },
+      "skeleton": {
+        "hp": 10,
+        "speed": 0.05625,
+        "damage": 1,
+        "reach": 0.8,
+        "cooldown": 55,
+        "detectMult": 1.1,
+        "radius": 0.375,
+        "height": 1.1
+      },
+      "centipede": {
+        "hp": 80,
+        "speed": 0.059375,
+        "damage": 2,
+        "reach": 1,
+        "cooldown": 50,
+        "detectMult": 1.6,
+        "radius": 0.55,
+        "height": 0.9
+      },
+      "frogmonk": {
+        "hp": 16,
+        "speed": 0.053125,
+        "damage": 2,
+        "reach": 1,
+        "cooldown": 55,
+        "detectMult": 1.2,
+        "radius": 0.42500000000000004,
+        "height": 0.9
+      },
+      "frogking": {
+        "hp": 140,
+        "speed": 0.05625,
+        "damage": 3,
+        "reach": 1.3,
+        "cooldown": 70,
+        "detectMult": 1.8,
+        "radius": 0.85,
+        "height": 1.3
+      },
+      "octopus": {
+        "hp": 14,
+        "speed": 0.065625,
+        "damage": 1,
+        "reach": 0.9,
+        "cooldown": 70,
+        "detectMult": 1.4,
+        "radius": 0.4,
+        "height": 0.6
+      },
+      "frog": {
+        "hp": 8,
+        "speed": 0.0625,
+        "damage": 2,
+        "reach": 0.8,
+        "cooldown": 80,
+        "detectMult": 0.85,
+        "radius": 0.42500000000000004,
+        "height": 0.6875
+      }
+    },
+    "status": {
+      "hidden": {
+        "secs": 0
+      },
+      "poison": {
+        "secs": 12
+      },
+      "bleed": {
+        "secs": 9
+      },
+      "tired": {
+        "secs": 120
+      },
+      "confused": {
+        "secs": 6
+      },
+      "slow": {
+        "secs": 5
+      },
+      "frozen": {
+        "secs": 2.5
+      },
+      "burning": {
+        "secs": 5
+      },
+      "wet": {
+        "secs": 20
+      },
+      "shock": {
+        "secs": 4
+      }
+    }
+  }
+}
