@@ -5,8 +5,8 @@
   "payload": {
     "kind": "web",
     "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.8/Fire-Tail-Client-0.9.8.zip",
-    "sha256": "821b8e08d0f4798de65c1c220efee479fe6472e115593b062dbf865061d36acc",
-    "size": 300718665,
+    "sha256": "aba4b53522b41134363eb48d87894c8cb38b2d5ab6669c75116998f2bca4046c",
+    "size": 300718649,
     "entrypoint": "index.html"
   }
 }
