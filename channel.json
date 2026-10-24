@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "version": "0.9.7",
+  "notes": "Stable initiative positions, compact battle HUD, larger dice and movement number highlights. Includes cooperative battle and visual updates.",
+  "payload": {
+    "kind": "web",
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.7/Fire-Tail-Client-0.9.7.zip",
+    "sha256": "5e174224530d9011a9c65562e10e017b87bed4dcc59b93655c92378f9ba41b24",
+    "size": 143141552,
+    "entrypoint": "index.html"
+  }
+}
