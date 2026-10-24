@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.8",
-  "notes": "Five mouse crew members, trap cards, responsive battle hand, rebuilt cheese cargo ship and updated character art. Alpha development build.",
+  "version": "0.9.9",
+  "notes": "Rounded pixel dialogue, mouse crew polish, faster dice clash and quieter participant arenas. Alpha development build.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.8/Fire-Tail-Client-0.9.8.zip",
-    "sha256": "aba4b53522b41134363eb48d87894c8cb38b2d5ab6669c75116998f2bca4046c",
-    "size": 300718649,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.9/Fire-Tail-Client-0.9.9.zip",
+    "sha256": "73c21b9d448a7db64652cafb79564050aa6e02a29d9efd313a33299adee59ac3",
+    "size": 300739849,
     "entrypoint": "index.html"
   }
 }

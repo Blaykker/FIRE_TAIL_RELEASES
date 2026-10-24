@@ -1,10 +1,14 @@
-# FIRE TAIL 0.9.8 — alpha
+# FIRE TAIL 0.9.9 — alpha
 
-- Five mouse crew members: Tail, Bram, Lyra, Orin and Elian; previous species retained for saved-game compatibility.
-- Four placeable trap cards, poison and large-creature footprint interactions.
-- Full-size battle cards with responsive spacing and overlap; side controls retain their own space.
-- Rebuilt menu ship with a double prow, descending stairwell, cheese cargo, mouse insignia and aged wood. Original scene remains selectable.
-- Individual high-resolution crew bodies and 60 expression portraits. Updated Tail silhouette and torch illustration.
-- Launcher Lite 0.2.4 includes shared game login and a separate verified self-update channel.
+- Rounded pixel-art speech bubbles, bundled pixel font and two-pixel positioning.
+- All five mouse crew members can carry their torch with their tail; corrected HUD portrait orientation.
+- Quieter inward arena pulse for participants; outward pulse remains visible to observers.
+- Faster simultaneous attack/defence dice presentation.
+- Fatal trap battle-end correction and explicit defeat confirmation; defeated creatures disappear visually while the simulation is paused.
+- Movement-only wake-up, arrival NPC speech, Malta title and a two-page rescue letter.
+- Menu logo transition and two fixed horizon lights revealed as the storm silhouette's eyes.
+- Website now introduces the five mouse crew members, cheese cargo and the 276-mouse voyage.
 
-Validation: 160 automated game tests, TypeScript checks and production build; 31 native launcher checks. This is an alpha development build. Full online multiplayer, reconnection and cross-scene synchronization still require extended playtesting. The ship's lower levels are menu scenery, not a new playable exploration area.
+Validation: 163 game tests, TypeScript and production build; 18 website tests. Launcher Lite remains 0.2.4 and installs this client through the existing feed.
+
+This is an alpha build. The new explorable wreck and revised ship prow remain pending. Full online multiplayer and reconnection still need extended playtesting.

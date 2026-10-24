@@ -4,7 +4,7 @@
   "payload": {
     "kind": "launcher",
     "platform": "win32-x64",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.8/Fire-Tail-Launcher-Lite-0.2.4-Windows-x64.exe",
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.9/Fire-Tail-Launcher-Lite-0.2.4-Windows-x64.exe",
     "sha256": "cf4b7842b5505f5eccb29c9120ccf3c1d17be2cf1c6927084f85d2e0772fdbc2",
     "size": 10425344
   }
