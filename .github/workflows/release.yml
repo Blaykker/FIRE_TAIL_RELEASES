@@ -2,7 +2,7 @@ name: Publish launcher update
 on:
   push:
     branches: [main]
-    paths: ['client/**', 'launcher/**', 'scripts/package-release.py', '.github/workflows/release.yml']
+    paths: ['client/**', 'scripts/package-release.py', '.github/workflows/release.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -14,10 +14,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check whether the game client changed
+        id: changed
+        env:
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          if [ "$TRIGGER" = "workflow_dispatch" ] || git diff --name-only HEAD^ HEAD | grep -q '^client/'; then
+            echo "client=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Package compiled client
+        if: steps.changed.outputs.client == 'true'
         id: package
         run: echo "version=$(python3 scripts/package-release.py)" >> "$GITHUB_OUTPUT"
       - name: Publish release asset and manifest
+        if: steps.changed.outputs.client == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ steps.package.outputs.version }}
@@ -28,11 +40,13 @@ jobs:
             gh release create "v$VERSION" "Fire-Tail-Client-$VERSION.zip" channel.json launcher-channel.json launcher/*.exe --title "FIRE TAIL $VERSION" --notes-file RELEASE_NOTES.md
           fi
       - name: Update launcher feed after release upload
+        if: steps.changed.outputs.client == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add channel.json launcher-channel.json
           if ! git diff --cached --quiet; then
             git commit -m "Update launcher feed"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi

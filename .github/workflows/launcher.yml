@@ -1,0 +1,40 @@
+name: Publish native launcher
+on:
+  push:
+    branches: [main]
+    paths: ['launcher/**', 'scripts/package-launcher.py', '.github/workflows/launcher.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: launcher-release
+  cancel-in-progress: false
+jobs:
+  launcher:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and package launcher manifest
+        id: package
+        run: echo "version=$(python3 scripts/package-launcher.py)" >> "$GITHUB_OUTPUT"
+      - name: Publish standalone launcher
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.package.outputs.version }}
+        run: |
+          ASSET="launcher/Fire-Tail-Launcher-Lite-$VERSION-Windows-x64.exe"
+          if gh release view "launcher-v$VERSION" >/dev/null 2>&1; then
+            gh release upload "launcher-v$VERSION" "$ASSET" launcher-channel.json --clobber
+          else
+            gh release create "launcher-v$VERSION" "$ASSET" launcher-channel.json --title "FIRE TAIL Launcher Lite $VERSION" --notes-file LAUNCHER_RELEASE_NOTES.md
+          fi
+      - name: Save verified launcher feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add launcher-channel.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update standalone launcher feed"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
