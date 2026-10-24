@@ -2,7 +2,7 @@ name: Publish launcher update
 on:
   push:
     branches: [main]
-    paths: ['client/**', 'scripts/package-release.py', '.github/workflows/release.yml']
+    paths: ['client/**', 'launcher/**', 'scripts/package-release.py', '.github/workflows/release.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,15 +23,15 @@ jobs:
           VERSION: ${{ steps.package.outputs.version }}
         run: |
           if gh release view "v$VERSION" >/dev/null 2>&1; then
-            gh release upload "v$VERSION" "Fire-Tail-Client-$VERSION.zip" channel.json --clobber
+            gh release upload "v$VERSION" "Fire-Tail-Client-$VERSION.zip" channel.json launcher-channel.json launcher/*.exe --clobber
           else
-            gh release create "v$VERSION" "Fire-Tail-Client-$VERSION.zip" channel.json --title "FIRE TAIL $VERSION" --notes-file RELEASE_NOTES.md
+            gh release create "v$VERSION" "Fire-Tail-Client-$VERSION.zip" channel.json launcher-channel.json launcher/*.exe --title "FIRE TAIL $VERSION" --notes-file RELEASE_NOTES.md
           fi
       - name: Update launcher feed after release upload
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add channel.json
+          git add channel.json launcher-channel.json
           if ! git diff --cached --quiet; then
             git commit -m "Update launcher feed"
             git push origin HEAD:main
