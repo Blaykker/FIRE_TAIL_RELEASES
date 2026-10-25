@@ -1,17 +1,22 @@
-# FIRE TAIL 0.9.10 — alpha para testes convidados
+# FIRE TAIL 0.9.11 — tripulantes, naufrágio e exploração
 
-## Nesta versão
-- Cartas em formato tarot com artes da tripulação de ratos, habilidades próprias e armadilhas do Tail.
-- Dados de madeira pintada: símbolos legíveis, queijo como recurso, revelação com uma piscada e grupos separados de ataque/defesa. Resultado acompanha a largura do HUD.
-- Ajustes de entrada e saída do combate compartilhado, exclusão de criaturas já mortas, movimento inicial automático e cartas com hover mesmo fora da vez.
-- Vitória apresenta recompensas individuais por participante, com entrega deduplicada e excedentes preservados.
-- Pause simplificado, mute independente de música/efeitos, categorias de receitas como abas conectadas e vida seccionada das criaturas/iniciativa.
-- Relatos de bugs/sugestões no pause, fila offline e estatísticas opcionais resumidas. Dados aparecem somente no painel privado do criador.
-- Retratos ilustrados de criaturas, javali das colinas e redução de trabalho de renderização de caudas, contornos, reflexos e menu.
+- Olhos pintados curvos, maiores e legíveis de frente/perfil; sobrancelhas junto ao rosto. Correção dos índices da malha de contorno, cel shading dos ratos e orelhas menores e mais baixas.
+- Orin com instrumento voltado para a frente e boina simples; capa mais presente na Lyra.
+- Aba Tripulante: ilustração animada, atributos em gráfico, profissões, talentos e cartas próprias. Prática de mineração, lenhador, escavação, arquearia, armas, defesa, esquiva, artesanato, tecnologia, negociação e sobrevivência preservada no save.
+- Até três talentos de exploração por tripulante, desbloqueados em Genética. A capa da Lyra oculta por seis segundos e atacar a revela; na batalha, sua carta Manto das estrelas retira Lyra da mira até a próxima vez. Todos os ratos mantêm corrida e rolada.
+- Mochila abaixo do minimapa, avisos abaixo dela com vidro e borda interna em degradê; categorias compactas, ícones de habilidades ajustados e baú com mochila lateral.
+- Novo mercante corvo com modelo e retrato dedicados, diálogo e chat integrados à estética de vidro.
+- Barco do menu utilizado também no naufrágio, em três partes com esqueleto, carga e convés caminhável. Abertura de partidas novas sem equipamentos, tutorial por ações e movimento de levantar adaptado das fases do FBX fornecido. Saves antigos preservam seus equipamentos.
+- Discussão do barco com balões pixelados, cauda branca e símbolos à frente do fogo, ocultos durante a seleção aproximada. Fogueira com o mesmo shader estilizado da tocha, fumaça mais leve, sombras projetadas, vela curva com vento e vulto submarino discreto.
+- Vida de criaturas com preenchimento estável, contorno colorido externo e seleção de objetos também sem pós-processamento. Dados com cores por função e dano em destaque por mais tempo.
+- Flechas atravessam vazios e obstáculos baixos; caminhar por pedras continua bloqueado. Picareta pode romper um obstáculo adjacente por ação na batalha. Rotas de perseguição com busca de caminho e cache limitado.
+- Voz por proximidade ou grupo, com ativação explícita, mute e liberação do microfone ao desligar/sair. Áudio não é gravado.
+- Builds públicos sem mapas de código-fonte. O JavaScript compilado e os recursos necessários ao cliente continuam públicos e inspecionáveis.
 
-## Validação e limites
-196 testes em 35 arquivos, TypeScript e build de produção. O acesso continua em alpha por convite. Esta versão não representa uma campanha/demo completa; o naufrágio explorável, revisão final dos modelos e testes prolongados de multiplayer/reconexão continuam em desenvolvimento. Não se declara 60 FPS garantidos.
+## Verificação e limites do alpha
 
-Estatísticas são opcionais e informadas pelo cliente, usadas para diagnóstico, não para conceder recompensas. O envio automático de convites por e-mail ainda não está ativo; convites individuais continuam disponíveis no painel.
+215 testes passaram em 41 arquivos, além de TypeScript e compilação de produção. Há testes de navegação, máscara de tiro compartilhada, talentos, persistência, olhos, tutorial e ciclo da voz. A voz foi conferida com áudio simulado; áudio real entre duas máquinas e redes com NAT restritivo ainda precisa de teste, podendo exigir TURN. Os talentos com botões atuam na exploração; no combate são usadas as cartas próprias.
 
-Launcher Lite 0.2.5 permanece compatível e recebe o cliente 0.9.10 pelo canal existente. A publicação e os hashes serão registrados após a verificação do download público.
+O corte de meio bloco com pá também é liberado pela profissão Escavação no nível 3 (Shift + pá no solo sobre um bloco); a pá não minera paredes. Isso não cria terrenos abaixo do limite inferior do mundo.
+
+Esta entrega permanece alpha para testes convidados, com balanceamento e testes prolongados de multiplayer em andamento. Não representa uma campanha/demo concluída nem garante 60 FPS em todo equipamento. Convites automáticos por e-mail continuam dependendo da ativação do remetente.
