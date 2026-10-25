@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.9",
-  "notes": "Rounded pixel dialogue, mouse crew polish, faster dice clash and quieter participant arenas. Alpha development build.",
+  "version": "0.9.10",
+  "notes": "Alpha 0.9.10: cartas tarot, dados de madeira, combate e recompensas revisados, relatos no pause e metricas opcionais.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.9/Fire-Tail-Client-0.9.9.zip",
-    "sha256": "73362edbb70324100e60d7d0dbcdd3e9b77313b350f6880374021d08d1d5716c",
-    "size": 300739833,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.10/Fire-Tail-Client-0.9.10.zip",
+    "sha256": "1fb6138a0c4b1a494631e47372eca29d980c72fc673d9852742162b78b964547",
+    "size": 323693716,
     "entrypoint": "index.html"
   }
 }
