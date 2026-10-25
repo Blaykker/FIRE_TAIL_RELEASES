@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.10",
-  "notes": "Alpha 0.9.10: cartas tarot, dados de madeira, combate e recompensas revisados, relatos no pause e metricas opcionais.",
+  "version": "0.9.11",
+  "notes": "Alpha 0.9.11: tripulantes e talentos, profissoes, tutorial progressivo, naufragio exploravel e batalha revisada. Voz opcional em teste.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.10/Fire-Tail-Client-0.9.10.zip",
-    "sha256": "1fb6138a0c4b1a494631e47372eca29d980c72fc673d9852742162b78b964547",
-    "size": 323693716,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.11/Fire-Tail-Client-0.9.11.zip",
+    "sha256": "da39f43796e1fb9e3f5dd0fbf1be99027addc5626b956113d7755ea95a5282eb",
+    "size": 325259076,
     "entrypoint": "index.html"
   }
 }
