@@ -31,18 +31,6 @@ jobs:
           cache: npm
           cache-dependency-path: launcher-macos/runtime/package-lock.json
       - run: npm ci
-      - name: Fetch the verified published game client
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs/promises';
-          import {spawnSync} from 'node:child_process';
-          const feed=JSON.parse(await fs.readFile('../../channel.json','utf8'));
-          const config=JSON.parse(await fs.readFile('launcher.config.json','utf8'));
-          config.bundledVersion=feed.version;
-          await fs.writeFile('launcher.config.json',JSON.stringify(config,null,2));
-          const result=spawnSync(process.execPath,['scripts/fetch-client.mjs'],{stdio:'inherit',env:{...process.env,CLIENT_URL:feed.payload.url,CLIENT_SHA256:feed.payload.sha256,CLIENT_VERSION:feed.version}});
-          if(result.status!==0)process.exit(result.status||1);
-          NODE
       - name: Build unsigned DMG
         run: npm run pack:mac -- --${{ matrix.arch }}
         env:
@@ -81,7 +69,7 @@ jobs:
               p=Path(f'macos-assets/Fire-Tail-Launcher-{version}-macOS-{arch}.dmg')
               platforms[arch]={'url':f'https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v{version}/{p.name}','size':p.stat().st_size,'sha256':hashlib.file_digest(p.open('rb'),'sha256').hexdigest()}
           Path('launcher-macos-channel.json').write_text(json.dumps({'schema':1,'version':version,'signed':False,'notarized':False,'platforms':platforms},indent=2)+'\n')
-          Path('macos-assets/RELEASE_NOTES.md').write_text('Launcher macOS para Apple Silicon e Intel. Inclui o cliente do jogo, atualização verificável por SHA-256 e login compartilhado.\n\nVersão de teste sem assinatura Developer ID e sem notarização Apple. A instalação deve ser conferida no Mac do jogador. Futuras versões do launcher são verificadas pelo aplicativo e instaladas pelo DMG; o cliente do jogo é atualizado dentro do launcher.\n')
+          Path('macos-assets/RELEASE_NOTES.md').write_text('Launcher macOS para Apple Silicon e Intel. Contém apenas o launcher. O cliente do jogo é baixado separadamente pelo aplicativo, com verificação SHA-256 e login compartilhado.\n\nVersão de teste sem assinatura Developer ID e sem notarização Apple. A instalação deve ser conferida no Mac do jogador. Futuras versões do launcher são verificadas pelo aplicativo e instaladas pelo DMG; o cliente do jogo é atualizado dentro do launcher.\n')
           PY
       - name: Publish Mac installers
         env:

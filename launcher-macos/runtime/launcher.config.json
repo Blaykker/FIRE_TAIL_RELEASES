@@ -4,7 +4,7 @@
   "studio": "2P Creative Studio",
   "studioUrl": "https://2p-one.vercel.app/",
   "webGameUrl": "https://fire-tail-six.vercel.app/",
-  "bundledVersion": "0.9.12",
+  "bundledVersion": "0.0.0",
   "feedUrl": "https://fire-tail-web.vercel.app/releases/channel.json",
   "allowedDownloadHosts": [
     "github.com",
