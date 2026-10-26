@@ -1,51 +1,15 @@
-# FIRE TAIL 0.9.13 — início de jornada e co-op
+# FIRE TAIL 0.9.14 — leitura e batalha compartilhada
 
-- Corrigido o retorno ao título ao confirmar um personagem: atualizar o perfil da mesma conta deixa de ser tratado como troca de conta. Falhas transitórias ao consultar o perfil preservam o perfil válido já carregado.
-- A ilha e seus shaders são preparados antes da cinemática. A transição só libera o controle após preparar o mundo, e o botão de início impede disparos duplicados.
-- Co-op novamente acessível no pause, com opções de criar sala e entrar com código.
-- Sombras das silhuetas da tripulação projetadas no convés em movimento, com dither e cinco chamadas de desenho, substituindo o mapa pontual de seis faces.
-- Mar com névoa radial para disfarçar o perímetro, enquadramento com movimento suave, Cthulhu mais à direita e silhueta submarina mais marcada.
-- Fogo mais baixo e espalhado pela bacia, fumaça mais densa e emblema vetorial de rato na vela, com transparência.
+- Cartas de tarô: removida a camada antiga que desfocava toda a arte; título e descrição concentrados na região inferior, com transição suave e marcações diferentes para Livre/Ação.
+- Iniciativa com vidro em degradê sem faixa de fundo rígida; cálculo dos dados com largura ajustada ao conteúdo.
+- Movimento com D4 verde independente (0, 1, 2 ou 3). Ataque/defesa têm madeira colorida sem símbolos ou números impressos; símbolos isolados ganham deformação horizontal e vertical. Impactos incluem partículas verdes para criaturas compatíveis.
+- Entrada de companheiros durante a rolagem inicial é enfileirada, e snapshots também anunciam a arena, evitando depender de uma mensagem separada. Teste local com dois jogadores verifica entrada na mesma batalha e saída compartilhada.
+- Criaturas reservadas por batalhas não recebem flechas, golpes ou dano remoto da exploração. Recuar concede uma proteção breve contra reentrada imediata.
+- Nova jornada exibe ferramentas vazias. Ferramentas recuperadas ficam na bolsa até equipar, quando são consumidas e passam a integrar a roda.
+- Mochila em três regiões: equipamentos e vida, slots centrais e detalhes à direita. Ficha do tripulante volta a ocupar sua região corretamente. Espaços vazios têm símbolos centralizados discretos.
+- Clique ou botão direito no retrato de grupo abre opções sociais, incluindo seguir e abrir mensagem do grupo. Zoom de habilidade passa a um nível fixo moderado e habilidades bloqueadas ficam mais discretas.
+- Grama com lâminas mais largas e distribuição uniforme, mantendo a mesma quantidade de instâncias. Bordas superiores de grama recebem faixa de terra; entrada da caverna tem degraus mais amplos.
+- Mercante com bico maior; rampa do naufrágio sem corrimão atravessando a passagem, baú no porão e piso de apoio inferior.
+- Proteção de sessão simultânea no mesmo navegador, por conta. **Ainda não é bloqueio global entre dispositivos**: esse controle exige autoridade no servidor. Nenhum identificador de conta é enviado aos outros jogadores.
 
-230 testes passaram e a compilação de produção foi concluída. O fluxo de selecionar personagem, criar mundo, chegar à ilha e abrir o co-op pelo pause foi conferido na interface de desenvolvimento. A correção da troca de conta tem teste de regressão; login pessoal real depende da sessão do jogador.
-
-O launcher Mac agora é distribuído sem o cliente do jogo. O jogo é instalado e atualizado separadamente pelo aplicativo. Continua sem assinatura Developer ID e sem notarização Apple.
-
-## Histórico: 0.9.12 — contas, cartas e desempenho
-
-- Salvamento local por conta com sincronização, revisões e preservação de conflitos entre dispositivos. Recuperação explícita de mundos antigos deste computador. O alpha publicado exige login.
-- Cartas de tarô com o mesmo layout na mão, coleção e ficha do tripulante. Turnos de 21 segundos, novos ícones de ação, dados mais próximos do HUD e cores por etapa preservando a pintura dos símbolos.
-- Mochila com compartimentos, slots identificados, oito novas ilustrações ampliadas de equipamentos e progressão de profissões com desbloqueios de receitas.
-- Correção da resolução interna quando o pós-processamento está desligado, reflexos limitados a 10 Hz e mar do menu animado na GPU. Medição de referência: 58 FPS médios na ilha em GTX 750 Ti, janela 1280×720 e buffer 640×360, sombras e pós-processamento desligados. O resultado varia com a configuração e a cena.
-- Novo fogo volumétrico estilizado no barco, sombras em dither, silhueta no horizonte iluminada pelo relâmpago, capas leves e carga de queijo lançada ao mar na cinemática.
-- Naufrágio com mastros de acesso, suporte na escada, salto curto entre vãos, poucas cargas de queijo recuperáveis e acampamento em terra. Parrot, Gecko e Tartaruga são NPCs da trilha narrativa, sem voltar à seleção jogável.
-- Recompensas por relatos: 3 queijos por bug e 7 por sugestão, registradas no servidor e sem duplicar relatos iguais.
-
-228 testes do jogo passaram, além da verificação TypeScript e compilação de produção. Conta, revisões e recompensas também foram verificadas em transação revertida no banco.
-
-Launcher Mac 0.3.0 disponível separadamente para Apple Silicon e Intel no mesmo repositório. Sem Developer ID e sem notarização Apple; abertura verificada em executores Mac nativos, instalação no aparelho do jogador ainda em teste. Atualiza o cliente pelo feed e avisa sobre novos instaladores do launcher.
-
-Este é um alpha: multiplayer prolongado, voz entre redes diferentes e progressão de convidados continuam em teste. A campanha completa de resgate e o envio automático de convites por e-mail não fazem parte desta entrega. JavaScript compilado e recursos do cliente são públicos; o projeto-fonte permanece separado.
-
-## Histórico: 0.9.11
-
-- Olhos pintados curvos, maiores e legíveis de frente/perfil; sobrancelhas junto ao rosto. Correção dos índices da malha de contorno, cel shading dos ratos e orelhas menores e mais baixas.
-- Orin com instrumento voltado para a frente e boina simples; capa mais presente na Lyra.
-- Aba Tripulante: ilustração animada, atributos em gráfico, profissões, talentos e cartas próprias. Prática de mineração, lenhador, escavação, arquearia, armas, defesa, esquiva, artesanato, tecnologia, negociação e sobrevivência preservada no save.
-- Até três talentos de exploração por tripulante, desbloqueados em Genética. A capa da Lyra oculta por seis segundos e atacar a revela; na batalha, sua carta Manto das estrelas retira Lyra da mira até a próxima vez. Todos os ratos mantêm corrida e rolada.
-- Mochila abaixo do minimapa, avisos abaixo dela com vidro e borda interna em degradê; categorias compactas, ícones de habilidades ajustados e baú com mochila lateral.
-- Novo mercante corvo com modelo e retrato dedicados, diálogo e chat integrados à estética de vidro.
-- Barco do menu utilizado também no naufrágio, em três partes com esqueleto, carga e convés caminhável. Abertura de partidas novas sem equipamentos, tutorial por ações e movimento de levantar adaptado das fases do FBX fornecido. Saves antigos preservam seus equipamentos.
-- Discussão do barco com balões pixelados, cauda branca e símbolos à frente do fogo, ocultos durante a seleção aproximada. Fogueira com o mesmo shader estilizado da tocha, fumaça mais leve, sombras projetadas, vela curva com vento e vulto submarino discreto.
-- Vida de criaturas com preenchimento estável, contorno colorido externo e seleção de objetos também sem pós-processamento. Dados com cores por função e dano em destaque por mais tempo.
-- Flechas atravessam vazios e obstáculos baixos; caminhar por pedras continua bloqueado. Picareta pode romper um obstáculo adjacente por ação na batalha. Rotas de perseguição com busca de caminho e cache limitado.
-- Voz por proximidade ou grupo, com ativação explícita, mute e liberação do microfone ao desligar/sair. Áudio não é gravado.
-- Builds públicos sem mapas de código-fonte. O JavaScript compilado e os recursos necessários ao cliente continuam públicos e inspecionáveis.
-
-## Verificação e limites do alpha
-
-215 testes passaram em 41 arquivos, além de TypeScript e compilação de produção. Há testes de navegação, máscara de tiro compartilhada, talentos, persistência, olhos, tutorial e ciclo da voz. A voz foi conferida com áudio simulado; áudio real entre duas máquinas e redes com NAT restritivo ainda precisa de teste, podendo exigir TURN. Os talentos com botões atuam na exploração; no combate são usadas as cartas próprias.
-
-O corte de meio bloco com pá também é liberado pela profissão Escavação no nível 3 (Shift + pá no solo sobre um bloco); a pá não minera paredes. Isso não cria terrenos abaixo do limite inferior do mundo.
-
-Esta entrega permanece alpha para testes convidados, com balanceamento e testes prolongados de multiplayer em andamento. Não representa uma campanha/demo concluída nem garante 60 FPS em todo equipamento. Convites automáticos por e-mail continuam dependendo da ativação do remetente.
+O teste multiplayer desta atualização é local com duas janelas. Conexões reais entre dispositivos e a combinação voz/rede continuam exigindo testes de campo.
