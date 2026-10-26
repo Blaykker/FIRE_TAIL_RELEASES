@@ -1,15 +1,11 @@
-# FIRE TAIL 0.9.14 — leitura e batalha compartilhada
+# FIRE TAIL 0.9.15
 
-- Cartas de tarô: removida a camada antiga que desfocava toda a arte; título e descrição concentrados na região inferior, com transição suave e marcações diferentes para Livre/Ação.
-- Iniciativa com vidro em degradê sem faixa de fundo rígida; cálculo dos dados com largura ajustada ao conteúdo.
-- Movimento com D4 verde independente (0, 1, 2 ou 3). Ataque/defesa têm madeira colorida sem símbolos ou números impressos; símbolos isolados ganham deformação horizontal e vertical. Impactos incluem partículas verdes para criaturas compatíveis.
-- Entrada de companheiros durante a rolagem inicial é enfileirada, e snapshots também anunciam a arena, evitando depender de uma mensagem separada. Teste local com dois jogadores verifica entrada na mesma batalha e saída compartilhada.
-- Criaturas reservadas por batalhas não recebem flechas, golpes ou dano remoto da exploração. Recuar concede uma proteção breve contra reentrada imediata.
-- Nova jornada exibe ferramentas vazias. Ferramentas recuperadas ficam na bolsa até equipar, quando são consumidas e passam a integrar a roda.
-- Mochila em três regiões: equipamentos e vida, slots centrais e detalhes à direita. Ficha do tripulante volta a ocupar sua região corretamente. Espaços vazios têm símbolos centralizados discretos.
-- Clique ou botão direito no retrato de grupo abre opções sociais, incluindo seguir e abrir mensagem do grupo. Zoom de habilidade passa a um nível fixo moderado e habilidades bloqueadas ficam mais discretas.
-- Grama com lâminas mais largas e distribuição uniforme, mantendo a mesma quantidade de instâncias. Bordas superiores de grama recebem faixa de terra; entrada da caverna tem degraus mais amplos.
-- Mercante com bico maior; rampa do naufrágio sem corrimão atravessando a passagem, baú no porão e piso de apoio inferior.
-- Proteção de sessão simultânea no mesmo navegador, por conta. **Ainda não é bloqueio global entre dispositivos**: esse controle exige autoridade no servidor. Nenhum identificador de conta é enviado aos outros jogadores.
+- Corrige o bloqueio de exploração durante batalhas compartilhadas e a entrega de convites durante a conexão dos jogadores.
+- Limites de inventário respeitados: itens não vão para slots bloqueados e transferências parciais preservam o restante.
+- Picareta e suprimentos recuperáveis em caixas próximas; tutorial progressivo e região inicial protegida.
+- Primeira etapa da reconstrução do navio: materiais, reparos com tempo, porão, convés e acesso ao leme após as pistas e o rei sapo.
+- Cartas ampliáveis, transição suave da iniciativa, inventário e ilustrações corrigidos.
+- Dados com madeira pintada e símbolos presos às faces; vegetação curva e preparação da cena antes da entrada.
+- Launcher Windows Lite 0.2.6 permite solicitar o microfone no jogo. Mac 0.3.4 possui assinatura ad-hoc verificada e instaladores leves separados para Apple Silicon e Intel.
 
-O teste multiplayer desta atualização é local com duas janelas. Conexões reais entre dispositivos e a combinação voz/rede continuam exigindo testes de campo.
+Alpha em desenvolvimento. Voz e partidas por redes diferentes ainda precisam de testes em dispositivos reais. A assinatura do Mac não é notarização Apple Developer; o macOS pode solicitar autorização em Privacidade e Segurança.
