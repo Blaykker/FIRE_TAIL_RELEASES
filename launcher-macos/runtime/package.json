@@ -1,7 +1,7 @@
 {
   "name": "fire-tail-launcher",
   "productName": "Fire Tail Launcher",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "description": "FIRE TAIL â€” Uma luz na escuridÃ£o. Launcher do 2P Creative Studio.",
   "author": "2P Creative Studio",
@@ -62,7 +62,11 @@
       "artifactName": "Fire-Tail-Launcher-${version}-macOS-${arch}.${ext}",
       "extendInfo": {
         "NSMicrophoneUsageDescription": "Converse com a tripulação pelo chat de voz do Fire Tail."
-      }
+      },
+      "identity": "-",
+      "hardenedRuntime": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
     }
   }
 }

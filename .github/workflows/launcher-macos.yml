@@ -35,10 +35,18 @@ jobs:
         run: npm run pack:mac -- --${{ matrix.arch }}
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
-      - name: Smoke test on native Mac architecture
+      - name: Verify signature and launch the installed DMG on native Mac architecture
         run: |
-          APP=$(find release -maxdepth 2 -name '*.app' -type d -print -quit)
+          DMG=$(find release -maxdepth 1 -name '*.dmg' -type f -print -quit)
+          MOUNT=$(mktemp -d)
+          TARGET=$(mktemp -d)
+          hdiutil attach "$DMG" -mountpoint "$MOUNT" -nobrowse -readonly
+          ditto "$MOUNT/Fire Tail Launcher.app" "$TARGET/Fire Tail Launcher.app"
+          hdiutil detach "$MOUNT"
+          APP="$TARGET/Fire Tail Launcher.app"
           test -n "$APP"
+          codesign --verify --deep --strict --verbose=2 "$APP"
+          codesign -d --verbose=4 "$APP" 2>&1 | grep 'Signature=adhoc'
           FIRETAIL_SMOKE_TEST=1 "$APP/Contents/MacOS/Fire Tail Launcher" --disable-gpu
       - uses: actions/upload-artifact@v4
         with:

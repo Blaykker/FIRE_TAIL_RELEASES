@@ -13,7 +13,7 @@
   ],
   "gamePort": 47392,
   "websiteUrl": "https://fire-tail-web.vercel.app/",
-  "liteVersion": "0.2.5",
+  "liteVersion": "0.2.6",
   "launcherFeedUrl": "https://fire-tail-web.vercel.app/releases/launcher-channel.json",
   "auth": {
     "url": "https://twiyxalxifquskfnqmeb.supabase.co",
