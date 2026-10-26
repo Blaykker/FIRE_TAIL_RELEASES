@@ -1,0 +1,8 @@
+{
+  "generator": "OpenAI ImageGen",
+  "created": "2026-10-25",
+  "asset": "firetail-item-illustrations-v2.png",
+  "purpose": "Dedicated close-up illustrations for sword, axe, unlit torch, letter, pickaxe, shovel, bow and bucket.",
+  "layout": "Two rows of four; individual viewBox crops are defined in src/ui/artwork.ts.",
+  "direction": "Readable stylized mouse-scale equipment, wood, leather and restrained metal, consistent with Fire Tail."
+}

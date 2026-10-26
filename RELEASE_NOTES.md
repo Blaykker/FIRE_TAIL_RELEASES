@@ -1,4 +1,20 @@
-# FIRE TAIL 0.9.11 — tripulantes, naufrágio e exploração
+# FIRE TAIL 0.9.12 — contas, cartas e desempenho
+
+- Salvamento local por conta com sincronização, revisões e preservação de conflitos entre dispositivos. Recuperação explícita de mundos antigos deste computador. O alpha publicado exige login.
+- Cartas de tarô com o mesmo layout na mão, coleção e ficha do tripulante. Turnos de 21 segundos, novos ícones de ação, dados mais próximos do HUD e cores por etapa preservando a pintura dos símbolos.
+- Mochila com compartimentos, slots identificados, oito novas ilustrações ampliadas de equipamentos e progressão de profissões com desbloqueios de receitas.
+- Correção da resolução interna quando o pós-processamento está desligado, reflexos limitados a 10 Hz e mar do menu animado na GPU. Medição de referência: 58 FPS médios na ilha em GTX 750 Ti, janela 1280×720 e buffer 640×360, sombras e pós-processamento desligados. O resultado varia com a configuração e a cena.
+- Novo fogo volumétrico estilizado no barco, sombras em dither, silhueta no horizonte iluminada pelo relâmpago, capas leves e carga de queijo lançada ao mar na cinemática.
+- Naufrágio com mastros de acesso, suporte na escada, salto curto entre vãos, poucas cargas de queijo recuperáveis e acampamento em terra. Parrot, Gecko e Tartaruga são NPCs da trilha narrativa, sem voltar à seleção jogável.
+- Recompensas por relatos: 3 queijos por bug e 7 por sugestão, registradas no servidor e sem duplicar relatos iguais.
+
+228 testes do jogo passaram, além da verificação TypeScript e compilação de produção. Conta, revisões e recompensas também foram verificadas em transação revertida no banco.
+
+Launcher Mac 0.3.0 disponível separadamente para Apple Silicon e Intel no mesmo repositório. Sem Developer ID e sem notarização Apple; abertura verificada em executores Mac nativos, instalação no aparelho do jogador ainda em teste. Atualiza o cliente pelo feed e avisa sobre novos instaladores do launcher.
+
+Este é um alpha: multiplayer prolongado, voz entre redes diferentes e progressão de convidados continuam em teste. A campanha completa de resgate e o envio automático de convites por e-mail não fazem parte desta entrega. JavaScript compilado e recursos do cliente são públicos; o projeto-fonte permanece separado.
+
+## Histórico: 0.9.11
 
 - Olhos pintados curvos, maiores e legíveis de frente/perfil; sobrancelhas junto ao rosto. Correção dos índices da malha de contorno, cel shading dos ratos e orelhas menores e mais baixas.
 - Orin com instrumento voltado para a frente e boina simples; capa mais presente na Lyra.
