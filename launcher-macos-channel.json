@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "signed": false,
   "notarized": false,
   "platforms": {
     "arm64": {
-      "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v0.3.1/Fire-Tail-Launcher-0.3.1-macOS-arm64.dmg",
-      "size": 465563437,
-      "sha256": "d445c83664204c42b2c71b02b74113d2ddedb522f4986eef6c575bfe9f05ed73"
+      "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v0.3.2/Fire-Tail-Launcher-0.3.2-macOS-arm64.dmg",
+      "size": 135245084,
+      "sha256": "83dfe9431fea356156ddeda3cf68f277bcc85bcb85244742033259b6e9b8e7b8"
     },
     "x64": {
-      "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v0.3.1/Fire-Tail-Launcher-0.3.1-macOS-x64.dmg",
-      "size": 469786259,
-      "sha256": "7f4f693d0bebd7afe1e4acc61ab0077ad01663bea7c9e3ac9147ff6a677affcf"
+      "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v0.3.2/Fire-Tail-Launcher-0.3.2-macOS-x64.dmg",
+      "size": 139512609,
+      "sha256": "8f16385dc8a325a2471f085b3276911a111ddabe2dfdc82029a1672a2bec4976"
     }
   }
 }
