@@ -1,0 +1,23 @@
+{
+  "gameTitle": "FIRE TAIL",
+  "tagline": "Uma luz na escuridão.",
+  "studio": "2P Creative Studio",
+  "studioUrl": "https://2p-one.vercel.app/",
+  "webGameUrl": "https://fire-tail-six.vercel.app/",
+  "bundledVersion": "0.9.11",
+  "feedUrl": "https://fire-tail-web.vercel.app/releases/channel.json",
+  "allowedDownloadHosts": [
+    "github.com",
+    "release-assets.githubusercontent.com",
+    "objects.githubusercontent.com"
+  ],
+  "gamePort": 47392,
+  "websiteUrl": "https://fire-tail-web.vercel.app/",
+  "liteVersion": "0.2.5",
+  "launcherFeedUrl": "https://fire-tail-web.vercel.app/releases/launcher-channel.json",
+  "auth": {
+    "url": "https://twiyxalxifquskfnqmeb.supabase.co",
+    "publishableKey": "sb_publishable_q9vWRyV1LT06wddngV-Dmg_pnvP0wzl"
+  },
+  "macLauncherFeedUrl": "https://fire-tail-web.vercel.app/releases/launcher-macos-channel.json"
+}

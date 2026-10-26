@@ -1,0 +1,104 @@
+name: Publish macOS launcher
+on:
+  push:
+    branches: [main]
+    paths: ['launcher-macos/runtime/**', '.github/workflows/launcher-macos.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: launcher-macos
+  cancel-in-progress: false
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: arm64
+            runner: macos-15
+          - arch: x64
+            runner: macos-15-intel
+    runs-on: ${{ matrix.runner }}
+    defaults:
+      run:
+        working-directory: launcher-macos/runtime
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: launcher-macos/runtime/package-lock.json
+      - run: npm ci
+      - name: Fetch the verified published game client
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+          import {spawnSync} from 'node:child_process';
+          const feed=JSON.parse(await fs.readFile('../../channel.json','utf8'));
+          const config=JSON.parse(await fs.readFile('launcher.config.json','utf8'));
+          config.bundledVersion=feed.version;
+          await fs.writeFile('launcher.config.json',JSON.stringify(config,null,2));
+          const result=spawnSync(process.execPath,['scripts/fetch-client.mjs'],{stdio:'inherit',env:{...process.env,CLIENT_URL:feed.payload.url,CLIENT_SHA256:feed.payload.sha256,CLIENT_VERSION:feed.version}});
+          if(result.status!==0)process.exit(result.status||1);
+          NODE
+      - name: Build unsigned DMG
+        run: npm run pack:mac -- --${{ matrix.arch }}
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Smoke test on native Mac architecture
+        run: |
+          APP=$(find release -maxdepth 2 -name '*.app' -type d -print -quit)
+          test -n "$APP"
+          FIRETAIL_SMOKE_TEST=1 "$APP/Contents/MacOS/Fire Tail Launcher" --disable-gpu
+      - uses: actions/upload-artifact@v4
+        with:
+          name: launcher-macos-${{ matrix.arch }}
+          path: launcher-macos/runtime/release/*.dmg
+          if-no-files-found: error
+          retention-days: 14
+  publish:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: launcher-macos-*
+          merge-multiple: true
+          path: macos-assets
+      - name: Create checksummed Mac update feed
+        run: |
+          python3 - <<'PY'
+          import json, hashlib
+          from pathlib import Path
+          version=json.loads(Path('launcher-macos/runtime/package.json').read_text())['version']
+          platforms={}
+          for arch in ['arm64','x64']:
+              p=Path(f'macos-assets/Fire-Tail-Launcher-{version}-macOS-{arch}.dmg')
+              platforms[arch]={'url':f'https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-macos-v{version}/{p.name}','size':p.stat().st_size,'sha256':hashlib.file_digest(p.open('rb'),'sha256').hexdigest()}
+          Path('launcher-macos-channel.json').write_text(json.dumps({'schema':1,'version':version,'signed':False,'notarized':False,'platforms':platforms},indent=2)+'\n')
+          Path('macos-assets/RELEASE_NOTES.md').write_text('Launcher macOS para Apple Silicon e Intel. Inclui o cliente do jogo, atualização verificável por SHA-256 e login compartilhado.\n\nVersão de teste sem assinatura Developer ID e sem notarização Apple. A instalação deve ser conferida no Mac do jogador. Futuras versões do launcher são verificadas pelo aplicativo e instaladas pelo DMG; o cliente do jogo é atualizado dentro do launcher.\n')
+          PY
+      - name: Publish Mac installers
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(python3 -c "import json;print(json.load(open('launcher-macos-channel.json'))['version'])")
+          TAG="launcher-macos-v$VERSION"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo 'This launcher version already exists. Bump its version before publishing new binaries.' >&2
+            exit 1
+          fi
+          gh release create "$TAG" macos-assets/*.dmg launcher-macos-channel.json --prerelease --title "FIRE TAIL Launcher $VERSION · macOS" --notes-file macos-assets/RELEASE_NOTES.md
+      - name: Save Mac feed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add launcher-macos-channel.json
+          git commit -m 'Publish verified macOS launcher feed'
+          git pull --rebase origin main
+          git push origin HEAD:main

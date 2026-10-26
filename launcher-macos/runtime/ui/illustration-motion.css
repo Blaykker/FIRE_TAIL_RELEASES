@@ -1,0 +1,5 @@
+.motion-illustration{position:relative;display:grid;place-items:center;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 16px 20px #0004)}
+.idle-fallback{display:block;width:100%;height:100%;overflow:visible}.idle-canvas{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}.idle-ready>.idle-fallback{visibility:hidden}
+.idle-fallback .illustration-breathe{animation:illustration-breathe 5.2s ease-in-out infinite;transform-origin:50% 95%}
+@keyframes illustration-breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(1.006,1.009)}}
+@media(prefers-reduced-motion:reduce){.motion-illustration *{animation:none!important}}

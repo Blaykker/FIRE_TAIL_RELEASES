@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>FIRE TAIL — ícone</title>
+  <defs>
+    <linearGradient id="ftTile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a6461"/>
+      <stop offset="1" stop-color="#4b4543"/>
+    </linearGradient>
+    <linearGradient id="ftOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9342b"/>
+      <stop offset="0.55" stop-color="#ee5a32"/>
+      <stop offset="1" stop-color="#f58a3c"/>
+    </linearGradient>
+    <linearGradient id="ftInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb83f"/>
+      <stop offset="1" stop-color="#ffd85c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#ftTile)"/>
+  <g transform="translate(23 22) scale(0.91)">
+    <path d="M262 78 C266 116 298 146 332 188 C370 236 386 284 378 332 C368 394 318 432 256 432 C192 432 140 392 134 332 C128 282 146 236 172 200 L180 186 C186 204 196 220 208 228 C226 202 246 170 262 78 Z"
+      fill="url(#ftOuter)" stroke="#fff8ef" stroke-width="26" stroke-linejoin="round" paint-order="stroke"/>
+    <path d="M206 236 C226 214 246 184 262 122 C270 150 292 172 314 200 C292 186 270 186 256 204 C238 226 222 236 206 236 Z" fill="#c42a26" opacity="0.35"/>
+    <path d="M298 222 C318 262 332 300 326 344 C320 386 292 410 256 410 C216 410 192 384 194 350 C196 316 222 300 246 288 C268 276 290 258 298 222 Z" fill="url(#ftInner)"/>
+  </g>
+</svg>

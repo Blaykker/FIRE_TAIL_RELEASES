@@ -1,0 +1,76 @@
+{
+  "name": "fire-tail-launcher",
+  "productName": "Fire Tail Launcher",
+  "version": "0.3.0",
+  "private": true,
+  "description": "FIRE TAIL â€” Uma luz na escuridÃ£o. Launcher do 2P Creative Studio.",
+  "author": "2P Creative Studio",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "prepare-game": "node scripts/prepare-game.mjs",
+    "pack:win": "electron-builder --win nsis --x64 --publish never",
+    "pack:win:lite": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File native-windows/build.ps1",
+    "pack:mac": "electron-builder --mac dmg --publish never",
+    "release:game": "node scripts/package-game.mjs"
+  },
+  "dependencies": {
+    "extract-zip": "2.0.1"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "studio.spiritive.firetail.launcher",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "lib/**",
+      "ui/**",
+      "launcher.config.json",
+      "package.json",
+      "game-preload.cjs"
+    ],
+    "extraResources": [
+      {
+        "from": "bundled-game",
+        "to": "game",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "ui/assets/icon.ico",
+      "signExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "installerIcon": "ui/assets/icon.ico",
+      "uninstallerIcon": "ui/assets/icon.ico",
+      "artifactName": "Fire-Tail-Launcher-${version}-Windows-x64.${ext}"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.games",
+      "icon": "ui/assets/icon.icns",
+      "artifactName": "Fire-Tail-Launcher-${version}-macOS-${arch}.${ext}",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "Converse com a tripulação pelo chat de voz do Fire Tail."
+      }
+    }
+  }
+}

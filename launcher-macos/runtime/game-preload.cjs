@@ -1,0 +1,1 @@
+"use strict";const{contextBridge:i,ipcRenderer:e}=require("electron");location.origin==="https://play.firetail.local"&&i.exposeInMainWorld("firetailAuth",Object.freeze({takeSession:()=>e.sendSync("game:session"),shouldSignOut:()=>e.sendSync("game:signout")}));
