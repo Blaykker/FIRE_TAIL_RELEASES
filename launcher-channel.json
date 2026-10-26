@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "0.2.5",
+  "version": "0.2.6",
   "payload": {
     "kind": "launcher",
     "platform": "win32-x64",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-v0.2.5/Fire-Tail-Launcher-Lite-0.2.5-Windows-x64.exe",
-    "sha256": "723bc373cae2a6d4279f6138d4fc86b88372af360fd93086b15d7f432c06c947",
-    "size": 10419200
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/launcher-v0.2.6/Fire-Tail-Launcher-Lite-0.2.6-Windows-x64.exe",
+    "sha256": "aafef07f00c3c9edd0c5e0d90e151dd13a13e8ed85196a1f3d9d25f5d1c99412",
+    "size": 10428928
   }
 }
