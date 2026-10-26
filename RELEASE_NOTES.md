@@ -1,4 +1,17 @@
-# FIRE TAIL 0.9.12 — contas, cartas e desempenho
+# FIRE TAIL 0.9.13 — início de jornada e co-op
+
+- Corrigido o retorno ao título ao confirmar um personagem: atualizar o perfil da mesma conta deixa de ser tratado como troca de conta. Falhas transitórias ao consultar o perfil preservam o perfil válido já carregado.
+- A ilha e seus shaders são preparados antes da cinemática. A transição só libera o controle após preparar o mundo, e o botão de início impede disparos duplicados.
+- Co-op novamente acessível no pause, com opções de criar sala e entrar com código.
+- Sombras das silhuetas da tripulação projetadas no convés em movimento, com dither e cinco chamadas de desenho, substituindo o mapa pontual de seis faces.
+- Mar com névoa radial para disfarçar o perímetro, enquadramento com movimento suave, Cthulhu mais à direita e silhueta submarina mais marcada.
+- Fogo mais baixo e espalhado pela bacia, fumaça mais densa e emblema vetorial de rato na vela, com transparência.
+
+230 testes passaram e a compilação de produção foi concluída. O fluxo de selecionar personagem, criar mundo, chegar à ilha e abrir o co-op pelo pause foi conferido na interface de desenvolvimento. A correção da troca de conta tem teste de regressão; login pessoal real depende da sessão do jogador.
+
+O launcher Mac agora é distribuído sem o cliente do jogo. O jogo é instalado e atualizado separadamente pelo aplicativo. Continua sem assinatura Developer ID e sem notarização Apple.
+
+## Histórico: 0.9.12 — contas, cartas e desempenho
 
 - Salvamento local por conta com sincronização, revisões e preservação de conflitos entre dispositivos. Recuperação explícita de mundos antigos deste computador. O alpha publicado exige login.
 - Cartas de tarô com o mesmo layout na mão, coleção e ficha do tripulante. Turnos de 21 segundos, novos ícones de ação, dados mais próximos do HUD e cores por etapa preservando a pintura dos símbolos.
