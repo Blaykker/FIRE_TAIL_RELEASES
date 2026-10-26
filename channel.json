@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.14",
-  "notes": "Alpha 0.9.14: tripulantes e talentos, profissoes, tutorial progressivo, naufragio exploravel e batalha revisada. Voz opcional em teste.",
+  "version": "0.9.15",
+  "notes": "Alpha 0.9.15: tripulantes e talentos, profissoes, tutorial progressivo, naufragio exploravel e batalha revisada. Voz opcional em teste.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.14/Fire-Tail-Client-0.9.14.zip",
-    "sha256": "a8fa2ca6b844717804b4c2fc7a64f469314a35b85b38600825b952e488e03d18",
-    "size": 327430126,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.15/Fire-Tail-Client-0.9.15.zip",
+    "sha256": "fc24f133d9ba9fc160412cca8eef8864a73c30eda586e84ffd74f77ecac28574",
+    "size": 330054046,
     "entrypoint": "index.html"
   }
 }
