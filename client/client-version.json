@@ -1,5 +1,6 @@
 {
-  "version": "0.9.17",
-  "sourceRevision": "b946cac",
-  "builtAt": "2026-10-27T10:03:40.737310+00:00"
+  "version": "0.9.18",
+  "sourceRevision": "e58aef076f4485502f8dc76f0c4a2418cb856d62",
+  "builtAt": "2026-10-31T01:03:15.489922+00:00",
+  "notes": "Alpha 0.9.18: quatro oficios, seis itens originais, diario com requisitos e XP, fabricacao segura e melhorias de movimento, visao e IA tatica."
 }
