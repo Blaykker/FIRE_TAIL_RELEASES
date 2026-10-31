@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.17",
-  "notes": "Alpha 0.9.17: tripulantes e talentos, profissoes, tutorial progressivo, naufragio exploravel e batalha revisada. Voz opcional em teste.",
+  "version": "0.9.18",
+  "notes": "Alpha 0.9.18: quatro oficios, seis itens originais, diario com requisitos e XP, fabricacao segura e melhorias de movimento, visao e IA tatica.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.17/Fire-Tail-Client-0.9.17.zip",
-    "sha256": "a05bdba2669a5bf447965028f223eadb98f71bb52d872a489a9c541ca5ea357e",
-    "size": 330329010,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.18/Fire-Tail-Client-0.9.18.zip",
+    "sha256": "2cfa474a2dc6c89e7a63074c3f96c91dc287b0042b806776f8dc55325537de60",
+    "size": 330331566,
     "entrypoint": "index.html"
   }
 }
