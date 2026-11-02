@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.21",
-  "notes": "Alpha 0.9.21: dados sem rolagem dupla, centopeia que cerca e abate, efeitos de HQ, mochila com modos e bolso de missao/cartas, baus de missao, cartas com custo em losangos, Atos dos Tripulantes, balao de fala e recuperar senha.",
+  "version": "0.9.22",
+  "notes": "Alpha 0.9.22: conflito a Mouse Guard (objetivo Vencer/Expulsar, disposicao, Defender/Fintar/Manobrar, acordo), grama fina sem tapete verde, exclamacao em pixel art e dados ao lado do calculo.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.21/Fire-Tail-Client-0.9.21.zip",
-    "sha256": "8e48392cb97fab443a83c76e5cf1b6f739c4a0d4b903a56051274df89e64602e",
-    "size": 330351708,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.22/Fire-Tail-Client-0.9.22.zip",
+    "sha256": "7f529826c49a8becf1b708c61b100f73d50bec08cfb68547bf7d9daea77aafb9",
+    "size": 330354606,
     "entrypoint": "index.html"
   }
 }
