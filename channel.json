@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.20",
-  "notes": "Alpha 0.9.20: narrativa Atos 27 (Centuriao, Cronista, Legionario), Serpente da lenha, batalha com PM fixo e modo tatico, dados de ajuda, NPCs no minimapa e interface proporcional em celular e iPad.",
+  "version": "0.9.21",
+  "notes": "Alpha 0.9.21: dados sem rolagem dupla, centopeia que cerca e abate, efeitos de HQ, mochila com modos e bolso de missao/cartas, baus de missao, cartas com custo em losangos, Atos dos Tripulantes, balao de fala e recuperar senha.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.20/Fire-Tail-Client-0.9.20.zip",
-    "sha256": "80f38792e45e7a0a48b68c6230f27d27a590c03a4762b3d367fd5fce1af2b0e7",
-    "size": 330345774,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.21/Fire-Tail-Client-0.9.21.zip",
+    "sha256": "8e48392cb97fab443a83c76e5cf1b6f739c4a0d4b903a56051274df89e64602e",
+    "size": 330351708,
     "entrypoint": "index.html"
   }
 }
