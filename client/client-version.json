@@ -1,6 +1,6 @@
 {
-  "version": "0.9.21",
-  "sourceRevision": "4499fa41536cf5584ab00b9a37d05355a3925b08",
-  "builtAt": "2026-11-02T21:00:15.008755+00:00",
-  "notes": "Alpha 0.9.21: dados sem rolagem dupla, centopeia que cerca e abate, efeitos de HQ, mochila com modos e bolso de missao/cartas, baus de missao, cartas com custo em losangos, Atos dos Tripulantes, balao de fala e recuperar senha."
+  "version": "0.9.22",
+  "sourceRevision": "84f56194caf50c294f3913746b67142644b62a06",
+  "builtAt": "2026-11-02T22:39:35.055695+00:00",
+  "notes": "Alpha 0.9.22: conflito a Mouse Guard (objetivo Vencer/Expulsar, disposicao, Defender/Fintar/Manobrar, acordo), grama fina sem tapete verde, exclamacao em pixel art e dados ao lado do calculo."
 }
