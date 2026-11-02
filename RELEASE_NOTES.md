@@ -1,70 +1,72 @@
-# FIRE TAIL 0.9.20 — Atos 27, serpente e batalha sem dados de movimento
+# FIRE TAIL 0.9.21 — inventário estável, cartas novas, cerco da centopeia e efeitos de HQ
 
-Versão 0.9.20, preparada para publicação em 02/11/2026. Para jogar pelo launcher instalado: procure a atualização 0.9.20, conclua o download e selecione Embarcar.
-
-## Interface proporcional (celular e iPad)
-
-- Em telas menores que 1180×680, a interface inteira é desenhada num espaço virtual e **reduzida na mesma proporção**. Isso inclui a HUD de exploração, o minimapa, a batalha, os diálogos, a mochila e o chat. O jogo continua visível em vez de ficar coberto por botões gigantes.
-  - Escala aproximada: iPhone deitado 0,57; iPad 0,87; iPad Air deitado e desktop 1.
-- O layout responde ao tamanho virtual (container queries `@container hud` e unidades `cqw/cqh`), então a tela não fica "compacta" e reduzida ao mesmo tempo.
-- Os **controles de toque** mantêm tamanho de polegar (no mínimo ~82% do tamanho de desenho).
-- **Configurações → Vídeo → Tamanho da interface** (0,8–1,2) permite ajustar ao gosto. O ajuste fica salvo no aparelho.
+Versão 0.9.21 (02/11/2026). Para jogar pelo launcher: procure a atualização 0.9.21, conclua o download e selecione Embarcar.
 
 ## Batalha
 
-- **Movimento sem dados.** O dado de movimento no início do turno foi removido. Cada personagem tem **PM fixo por tipo**, como já acontecia com o PA (Tail/Lyra 4, Bram/Orin/Elian 3; inimigos com valores próprios). Cartas e habilidades podem somar PM; bônus de PA ficam mais raros e mais fortes.
-- **HUD inferior** reorganizada:
-  - o **PA** fica dentro da HUD, logo acima da caixa de PM;
-  - a moldura começa mais baixa, perto da barra de vida, e as **cartas passam por cima dela**;
-  - "Vida" está maior.
-- **Dados**: ataque vermelho e defesa azul para os dois lados; jogador à esquerda e inimigo à direita.
-  - Câmera ortográfica, sem distorção.
-  - Espaçamento corrigido e os dados que contam ficam mais perto do centro.
-  - O resumo do confronto fica centralizado logo acima da HUD.
-- **Painel de batalha** (guia do turno + registro) no canto inferior esquerdo. Dano, crítico, cura e bloqueio aparecem destacados.
-- **Modo tático** (botão ▦ ou tecla **G**): xadrez legível no chão da arena. Esconde grama, decoração, vaga-lumes e chuva. A escolha fica salva.
-- **Ajuda (Mouse Guard):** cada aliado encostado no alvo dá +1 dado ao atacante, no máximo +2.
-- **Ordem Natural:** criaturas 2+ degraus acima dos ratos não morrem, são afugentadas. Preparado para corujas e outros bichos maiores.
+- **Dados rolavam mais de uma vez.** No coop, cada atualização da batalha que chegava pela rede recriava as rolagens, e a tela rolava os mesmos dados de novo (até 6 vezes). Agora cada rolagem tem um número único e aparece **uma vez só**.
+- **Cálculo nascendo da HUD**:
+  - o resumo do confronto virou uma aba presa à moldura de baixo;
+  - os dados ficam na mesma linha, à esquerda (jogador) e à direita (inimigo), colados na HUD;
+  - o quadro fica centralizado na HUD, não na tela.
+- **Efeito de HQ**: um estouro vermelho com "!" quando a criatura entra em combate e quando alguém leva dano (maior no crítico).
+- **Centopeia e serpente se movem como corpos longos.** Antes, encostadas num herói, elas ficavam paradas. Agora deslizam em volta da presa para **cercá-la**:
+  - quando o cerco começa a fechar, aparece o aviso "está cercando";
+  - com 3 partes do corpo em volta da presa, o ataque vira **APERTO**: se ferir, o herói cai **ABATIDO**.
+- **Abatido**:
+  - a casa mostra a marca "ABATIDO";
+  - um aliado ao lado gasta **1 ação** para levantá-lo;
+  - o herói volta com ~30% da vida (antes era 1).
+- **Árvore de habilidades**:
+  - **Passo de batalha** dá +1 PM por nível, nos níveis 3, 6 e 10;
+  - **Ritmo de batalha** dá +1 PA por nível; agora exige nível 5 e depois 12.
 
-## Serpente da lenha (nova criatura)
+## Inventário
 
-- Corpo de 4 casas; a cabeça é o ponto fraco.
-- A mordida envenena e os anéis prendem quem ela fere: a vítima perde a próxima vez.
-- O fogo da cauda do Tail dá +1 dado contra ela.
-- Aparece na mata da ilha, perto de árvores.
-- Tem entrada no bestiário, modelo 3D, retrato e sincronia no coop.
+- **Abas da mochila numa linha só.** A aba de cartas de batalha passa a se chamar **Baralho**.
+- **Modos da bolsa**: Tudo, Munição, Recursos, Minerais, **Missão** e **Cartas**.
+  - Itens de missão (como o volante) e cartas ou registros vão para um **bolso sem limite** e não ocupam espaço.
+  - A carta abre sozinha na primeira vez e fica para reler na aba Cartas.
+  - Saves antigos: cartas que estavam na mochila vão para o bolso.
+- **Itens que "sumiam"**:
+  - não dá mais para soltar item num espaço trancado da barra rápida ou da bolsa;
+  - mandar para a barra cheia avisa e não mexe em nada;
+  - pilhas iguais se juntam entre baú e mochila;
+  - moedas de venda ou duelo sem espaço caem no chão em vez de sumir.
+- **Baú de missão × baú normal**:
+  - o baú de missão entrega o conteúdo inteiro **a cada jogador, uma vez**, e só se couber na mochila; senão avisa e não tira nada;
+  - o baú normal continua sendo depósito.
+  - Os baús de suprimento da praia agora são de missão.
 
-## Narrativa (direção de 02/11)
+## Cartas
 
-- Arara, tartaruga e lagartixa saem da ilha. Entram três personagens da trama:
-  - **o Centurião**, rato romano de capa vermelha;
-  - **o Cronista**, camundongo médico e historiador;
-  - **o Legionário**, rato com escudo e lança.
-- Os três têm modelos 3D e retratos em silhueta a nanquim. Os saves antigos são migrados.
-- O navio do menu mostra a guarda romana.
-- O tutorial da praia é conduzido pela **Voz** («…»), sempre no formato problema → solução guiada.
-- O **minimapa mostra os NPCs** (losangos; quando estão longe, ficam presos à borda). O mapa grande mostra os nomes.
-- Documentos:
-  - `docs/design/NARRATIVA-ATOS27-2026-11-02.md`;
-  - `docs/design/MOUSE-GUARD-ESTUDO-2026-11-02.md`.
+- **Custo em PA**: losangos azuis em coluna, de cima para baixo, logo abaixo do losango da categoria, sem encostar nele. A base da carta ficou só para o texto, e a arte aparece inteira.
+- **Carta ampliada**: é a mesma carta, só maior. Saiu a versão quadrada que cortava a ilustração.
+- **Atos dos Tripulantes · Registro 27**: a carta do naufrágio foi reescrita na alegoria de Atos 27. Ela conta a carga lançada ao mar, o menor dos presos que se levanta e a chegada de todos vivos.
 
-## Estabilidade e ferramentas
+## Tutorial
 
-- `package-lock.json`: o `@xmldom/xmldom` apontava para um pacote inexistente (0.9.13). Isso derrubava os deploys git da Vercel desde a 0.9.19. Corrigido para 0.9.12.
-- O coop não sincronizava o **javali**: os convidados recebiam o tipo −1. Corrigido junto com a serpente.
-- Piso do naufrágio: corrigido o teste que falhava na 0.9.19.
-- **NPCs da trama não montavam** (o `mergeGeometries` recebia peças com atributos diferentes e devolvia null). Isso travava a ilha e o navio do menu. Corrigido, com teste próprio.
-- Teste com 2 clientes (coop local) passou: mesmo encontro, mesmas unidades e mesma vez nos dois, PM fixo e a serpente sincronizada. Ver `docs/validation/coop-0.9.20-2026-11-02.md`.
-- Validação: TypeScript sem erros, 282 testes (54 arquivos), build web ok.
-- Avaliador de demo:
-  - ferramenta `tools/demo-audit.mjs` (`--build`, `--e2e URL`, `--json`);
-  - agente `.claude/agents/demo-readiness.md`;
-  - relatórios em `docs/validation/`.
+- **A primeira tarefa é quebrar uma pedra.** A picareta cai aos pés de quem acorda.
+- **Nova ordem**: pedra → olhar ao redor → caixa e tocha → pá → arco → Atos dos Tripulantes. Saves no meio do tutorial são convertidos para a nova ordem.
 
-## Pendências conhecidas
+## Social e conta
 
-- A cena de abertura ainda é a discussão do queijo. Falta a depressão + "ninguém vai morrer".
-- Ainda faltam o contador das 276 almas e o puzzle da torre.
-- A serpente ainda não está ligada à história.
-- Falta um teste com 2 computadores em rede real nesta versão (o teste local de 2 clientes passou).
-- O desempenho não foi medido fora do ambiente de desenvolvimento.
+- **Balão de fala** sobre o personagem que está falando, enquanto o diálogo está aberto.
+- **Silhueta verde** em quem você está **seguindo** e em quem está **invisível** (você ou alguém do grupo).
+- **Esqueci a senha** na tela de entrar: o jogo envia um link de recuperação por e-mail. O link abre a versão web, que pede a senha nova.
+  - Requer `https://fire-tail-six.vercel.app/**` nas Redirect URLs do Supabase Auth.
+
+## Publicação
+
+- O feed do site (`fire-tail-web/releases/channel.json`) agora segue o feed do GitHub por uma regra de rota na Vercel. O launcher 0.2.5 recebe as versões novas sem precisar republicar o site.
+
+## Validação
+
+- TypeScript sem erros e 287 testes.
+- Capturas no navegador de nuvem: diálogo, mochila, carta ampliada e batalha com a centopeia cercando.
+
+## Pendências
+
+- Praia com ondas e faixa larga, arquipélago, Biblioteca e barco no grid: plano em `docs/design/MUNDO-ARQUIPELAGO-2026-11-02.md`.
+- Recuperação de senha no **site**: o código do site não está em git local; fica para a próxima publicação dele.
+- Ver senha de jogador no painel: **não é possível nem seguro**, porque a senha é guardada só como hash. A alternativa é o painel enviar o link de recuperação.

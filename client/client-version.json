@@ -1,6 +1,6 @@
 {
-  "version": "0.9.20",
-  "sourceRevision": "20d8b177da792be2b934b6180098acf5e81507d4",
-  "builtAt": "2026-11-02T17:23:15.944283+00:00",
-  "notes": "Alpha 0.9.20: narrativa Atos 27 (Centuriao, Cronista, Legionario), Serpente da lenha, batalha com PM fixo e modo tatico, dados de ajuda, NPCs no minimapa e interface proporcional em celular e iPad."
+  "version": "0.9.21",
+  "sourceRevision": "4499fa41536cf5584ab00b9a37d05355a3925b08",
+  "builtAt": "2026-11-02T21:00:15.008755+00:00",
+  "notes": "Alpha 0.9.21: dados sem rolagem dupla, centopeia que cerca e abate, efeitos de HQ, mochila com modos e bolso de missao/cartas, baus de missao, cartas com custo em losangos, Atos dos Tripulantes, balao de fala e recuperar senha."
 }
