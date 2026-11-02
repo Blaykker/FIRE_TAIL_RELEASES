@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.18",
-  "notes": "Alpha 0.9.18: quatro oficios, seis itens originais, diario com requisitos e XP, fabricacao segura e melhorias de movimento, visao e IA tatica.",
+  "version": "0.9.20",
+  "notes": "Alpha 0.9.20: narrativa Atos 27 (Centuriao, Cronista, Legionario), Serpente da lenha, batalha com PM fixo e modo tatico, dados de ajuda, NPCs no minimapa e interface proporcional em celular e iPad.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.18/Fire-Tail-Client-0.9.18.zip",
-    "sha256": "2cfa474a2dc6c89e7a63074c3f96c91dc287b0042b806776f8dc55325537de60",
-    "size": 330331566,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.20/Fire-Tail-Client-0.9.20.zip",
+    "sha256": "80f38792e45e7a0a48b68c6230f27d27a590c03a4762b3d367fd5fce1af2b0e7",
+    "size": 330345774,
     "entrypoint": "index.html"
   }
 }
