@@ -392,7 +392,7 @@
       "objKnee": 0.6
     },
     "player": {
-      "model": "lp_mouse"
+      "model": "tail_v6"
     },
     "aura": {
       "on": 1,
@@ -422,7 +422,7 @@
     },
     "levels": {
       "on": 1,
-      "surface": 0,
+      "surface": 1,
       "cave": 1,
       "dark": 0.28,
       "max": 0.7,

@@ -1,6 +1,6 @@
 {
-  "version": "0.9.23",
-  "sourceRevision": "01810c66d04c88dbfda0903489eb865a9f9ec8d7",
-  "builtAt": "2026-11-03T12:19:28.021568+00:00",
-  "notes": "Alpha 0.9.23: Tail novo (malha e textura do Tripo, rig Mixamo com perna digitigrada), ferramentas pela base a 45 graus, exclamacao estilo manga, dados contidos na HUD, pedra em meio bloco, quinas preservadas, degrau com a pa, carta com paginas na base e o cronista Luke."
+  "version": "0.9.24",
+  "sourceRevision": "4227d1f1d01e9114de56bdc6f187c1bb99bcb10d",
+  "builtAt": "2026-11-03T17:39:45.734368+00:00",
+  "notes": "Alpha 0.9.24: pes digitigrados de 3 pontos e IK em degraus, corrida de rato, arco com cotovelo em L, ferramentas pela base, mochila 3D nova, desafios de batalha estilo Dofus, modo tatico (toque nao fere e abre a batalha), dados 3D mais altos, calculo que sobe da HUD, flecha com rastro, lampiao e tocha de oleo de baleia."
 }
