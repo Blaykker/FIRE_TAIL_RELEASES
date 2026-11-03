@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.22",
-  "notes": "Alpha 0.9.22: conflito a Mouse Guard (objetivo Vencer/Expulsar, disposicao, Defender/Fintar/Manobrar, acordo), grama fina sem tapete verde, exclamacao em pixel art e dados ao lado do calculo.",
+  "version": "0.9.24",
+  "notes": "Alpha 0.9.24: pes digitigrados de 3 pontos e IK em degraus, corrida de rato, arco com cotovelo em L, ferramentas pela base, mochila 3D nova, desafios de batalha estilo Dofus, modo tatico (toque nao fere e abre a batalha), dados 3D mais altos, calculo que sobe da HUD, flecha com rastro, lampiao e tocha de oleo de baleia.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.22/Fire-Tail-Client-0.9.22.zip",
-    "sha256": "7f529826c49a8becf1b708c61b100f73d50bec08cfb68547bf7d9daea77aafb9",
-    "size": 330354606,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.24/Fire-Tail-Client-0.9.24.zip",
+    "sha256": "b20d125868918f5d2e2218ca2917a0a64852c3a49ecd604b7f5e67dede1d9cb0",
+    "size": 335399673,
     "entrypoint": "index.html"
   }
 }
