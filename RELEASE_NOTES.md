@@ -1,36 +1,38 @@
-# FIRE TAIL 0.9.22 — conflito à Mouse Guard, grama nova e exclamação em pixel art
+# FIRE TAIL 0.9.23 — Tail novo (Tripo + rig Mixamo)
 
-Versão 0.9.22 (02/11/2026). Para jogar pelo launcher: procure a atualização 0.9.22, conclua o download e selecione Embarcar.
+Versão 0.9.23 (03/11/2026). Para jogar pelo launcher: procure a atualização 0.9.23, conclua o download e selecione Embarcar.
 
-## Conflito à Mouse Guard (adaptação própria)
+## Personagem
+- **Tail v6 é o modelo padrão.** Malha do Tripo enviada pelo Pablo, com a textura e os UVs originais (sem re-bake).
+- **Rig no padrão Mixamo** (60 ossos). Detalhes e arquivos em `FIRE_TAIL_ASSETS/characters/tail-v6-20261103`.
+  - Ombro isolado, braço, antebraço e mão.
+  - Polegar e 3 dedos.
+  - Perna digitígrada em 6 pontos, conforme o desenho do Pablo: quadril → joelho → calcanhar (para trás) → meio do pé → base dos dedos → ponta. Os 3 últimos pontos ficam no chão e formam o pé; os dedos têm eixo próprio.
+  - Orelhas e 8 ossos de cauda.
+- **Ferramentas pela base**: picareta, machado, espada e foice ficam presos pela base do cabo, apontando ~45° para a frente. A direção vem do corpo, não da mão, e por isso lê igual de frente, de lado e de costas. No golpe a pegada volta para a mão e a esquerda ajuda no cabo. Ajuste em `TUNE.hold`.
+- **No jogo** a malha entra sem a cauda, porque o jogo desenha a cauda com a tocha. Saves e configurações antigas com o boneco antigo passam para o v6 uma vez.
+- **Nome**: o cronista agora se chama **Luke**.
 
-- **Objetivo do conflito** escolhido no começo da batalha: **Vencer** (derrubar todas as criaturas) ou **Expulsar** (derrubar a disposição delas à metade; as criaturas fogem). Bichos 2+ degraus acima dos ratos na Ordem Natural só podem ser expulsos.
-- **Disposição**: a vida somada de cada lado no começo, em duas barras no painel da esquerda. Com o objetivo Expulsar, a barra delas mostra a marca da metade.
-- **Novas ações**, além de Atacar:
-  - **Defender** (1 PA): +2 dados de defesa até a sua próxima vez.
-  - **Fintar**: contra quem está na defesa (🛡), a defesa dele não rola; contra quem não está, você rola 1 dado a menos.
-  - **Manobrar** (1 PA): +1 PM e o alvo fica **exposto** (◎): o próximo ataque de qualquer aliado contra ele rola +2 dados.
-- **Criaturas**: as feridas (≤40%) se defendem; quem ataca um herói na defesa finta.
-- **Acordo**: quem vence ainda paga conforme a disposição que perdeu. Menos de 25%, nada; 25–50%, perde 1 comida, munição ou material; 50% ou mais, perde 2. Nunca ferramentas, equipamento ou itens de missão. Aparece na tela de vitória.
+## Batalha
+- **Exclamação** mais quadrada, estilo mangá: cunha inclinada com linhas de impacto curtas, em pixel art.
+- **Dados** contidos na largura da HUD de baixo e centralizados com ela. O cálculo fica no meio, os dados saem do meio para fora e ficam um pouco mais baixos.
+- **Barras de disposição** removidas do painel. Continuam valendo nas regras: no objetivo Expulsar, as criaturas fogem quando perdem metade da vida somada.
 
-## Visual
+## Mundo e itens
+- **Pedra em meio bloco**: o bloco de pedra é colocado como meio bloco, e outro bloco no mesmo lugar completa a pilastra.
+- **Quinas preservadas**: ao quebrar um bloco, os vizinhos que já eram chanfrados continuam chanfrados.
+- **Degrau com a pá**: Shift + pá em cima de um bloco corta o meio bloco de cima e vira degrau. Não exige mais a habilidade.
 
-- **Grama**:
-  - lâminas finas de ponta arredondada, com a luz do chão, formando uma massa;
-  - **sem o tapete verde por baixo**: o chão e o grid de batalha aparecem;
-  - animação em degraus;
-  - dentro da arena de batalha a grama fica baixa;
-  - menos instâncias, então carrega mais rápido.
-- **Mato alto**: lâminas de 2 px com ponta arredondada, mais numerosas.
-- **Exclamação**: só o "!", em pixel art de pixels grandes, sem estrela por trás, com animação em degraus.
-- **Dados**: um pouco acima do cálculo, como se fossem jogados ao lado dele.
+## Carta
+- "Página anterior" e "Próxima página" ficam na base da carta, com o número da página. Só ficam ativas quando existe a página; desativadas aparecem apagadas.
+- O ✕ no canto guarda a carta.
 
-## Validação
+## Teste
+- **Atalho de teste** no menu de pausa: "⚑ porta do chefe" leva direto para perto do Rei Sapo. É fácil de remover.
 
-- TypeScript sem erros e 291 testes, incluindo os de Expulsar, Defender, Fintar, Manobrar e Acordo.
-- Capturas no navegador de nuvem: ilha com a grama nova e batalha com o objetivo, as barras de disposição e as ações novas.
-
-## Pendências
-
-- O modelo do Tail no Blender depende do Blender MCP conectado.
-- Objetivos Escapar e Capturar/Resgatar.
+## Estudo
+- `docs/design/DUNGEON-E-COMBATE-HIBRIDO-2026-11-03.md`:
+  - dungeon por salas com chave, como no Dofus;
+  - transição para o tático "parando o tempo", como no Divinity;
+  - ação (ABS) para as criaturas pequenas e tático para os chefes.
+- Nada disso está implementado ainda.
