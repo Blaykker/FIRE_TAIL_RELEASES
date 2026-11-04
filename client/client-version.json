@@ -1,6 +1,6 @@
 {
-  "version": "0.9.24",
-  "sourceRevision": "4227d1f1d01e9114de56bdc6f187c1bb99bcb10d",
-  "builtAt": "2026-11-03T17:39:45.734368+00:00",
-  "notes": "Alpha 0.9.24: pes digitigrados de 3 pontos e IK em degraus, corrida de rato, arco com cotovelo em L, ferramentas pela base, mochila 3D nova, desafios de batalha estilo Dofus, modo tatico (toque nao fere e abre a batalha), dados 3D mais altos, calculo que sobe da HUD, flecha com rastro, lampiao e tocha de oleo de baleia."
+  "version": "0.9.26",
+  "sourceRevision": "6f8fcfea9352d9cbd7e9ad62fdbf72f0e176305d",
+  "builtAt": "2026-11-04T19:41:40.752Z",
+  "notes": "Alpha 0.9.26 — Preparar, observar, agir: cozinha por ingredientes e tres beneficios; foco tatico com custo de estamina, vida e drops preservados; arco alinhado a mao, apoio dos pes independente de FPS; fogueiras e selecao no co-op corrigidas; hastes e sementes na escala do Tail."
 }
