@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.24",
-  "notes": "Alpha 0.9.24: pes digitigrados de 3 pontos e IK em degraus, corrida de rato, arco com cotovelo em L, ferramentas pela base, mochila 3D nova, desafios de batalha estilo Dofus, modo tatico (toque nao fere e abre a batalha), dados 3D mais altos, calculo que sobe da HUD, flecha com rastro, lampiao e tocha de oleo de baleia.",
+  "version": "0.9.26",
+  "notes": "Alpha 0.9.26 \u2014 Preparar, observar, agir: cozinha por ingredientes e tres beneficios; foco tatico com custo de estamina, vida e drops preservados; arco alinhado a mao, apoio dos pes independente de FPS; fogueiras e selecao no co-op corrigidas; hastes e sementes na escala do Tail.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.24/Fire-Tail-Client-0.9.24.zip",
-    "sha256": "b20d125868918f5d2e2218ca2917a0a64852c3a49ecd604b7f5e67dede1d9cb0",
-    "size": 335399673,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.26/Fire-Tail-Client-0.9.26.zip",
+    "sha256": "7114d744a0294a2388e89e2cd02a856143ac7a7e40066d22bfc48019d795fa58",
+    "size": 335686921,
     "entrypoint": "index.html"
   }
 }
