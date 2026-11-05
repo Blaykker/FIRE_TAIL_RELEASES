@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.26",
-  "notes": "Alpha 0.9.26 \u2014 Preparar, observar, agir: cozinha por ingredientes e tres beneficios; foco tatico com custo de estamina, vida e drops preservados; arco alinhado a mao, apoio dos pes independente de FPS; fogueiras e selecao no co-op corrigidas; hastes e sementes na escala do Tail.",
+  "version": "0.9.28",
+  "notes": "Alpha 0.9.28 \u2014 Tail compacto com pernas normais, propor\u00e7\u00f5es e modelos novos em toon shading; controle e batalha cooperativa revisados; fogueira port\u00e1til, abrigo da chuva, praia e barco melhorados; pr\u00e9vias de lojas.",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.26/Fire-Tail-Client-0.9.26.zip",
-    "sha256": "7114d744a0294a2388e89e2cd02a856143ac7a7e40066d22bfc48019d795fa58",
-    "size": 335686921,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.28/Fire-Tail-Client-0.9.28.zip",
+    "sha256": "ae6196daf93462da19390060da7e11b338988cc4b7639b702029faab5b0f6423",
+    "size": 353785061,
     "entrypoint": "index.html"
   }
 }
