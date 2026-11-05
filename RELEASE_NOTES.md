@@ -1,13 +1,15 @@
-# FIRE TAIL 0.9.26 — Preparar, observar, agir
+# FIRE TAIL 0.9.28 — Escala, silhuetas e tripulação
 
-04/11/2026. Continuação sobre a 0.9.25, preservando o Tail v6, mochila sem aljavas e narrativa atual.
+Esta atualização reúne o trabalho posterior à versão pública 0.9.26.
 
-- **Cozinha em Ofícios:** combine 1–5 ingredientes perto de uma fogueira, veja o resultado e prepare ensopados. Três benefícios: ligeiro, firme e discreto; misturar famílias dá prato comum. +8 XP por preparo. Fabricação sem espaço não gasta materiais.
-- **Foco tático:** durante ameaças, chamar o tático custa 15 estamina. No seu turno, em solo e sem chefe, volte ao tempo real pela HUD por outros 15. Recuperação de foco: 20 s. Vida e posições se mantêm; a troca não concede prêmios de vitória. No co-op, a batalha ainda precisa terminar/recuar em grupo.
-- **Arco:** corda e flecha acompanham o ponto real da mão. Apoio dos pés e quadril suavizados pelo tempo de cada quadro.
-- **Co-op:** corrigida falha de seleção de sprites e balões de outros jogadores; duas sessões conferidas no mesmo confronto.
-- **Fogueiras:** corrigida a origem usada para salvar o ponto de renascimento e detectar calor.
-- **Mundo pequeno:** moitas de hastes e sementes substituem três variantes de pequenas coníferas.
-- **Site:** versão e notas passam a acompanhar o feed do GitHub. Alpha aberto preparado no painel; o site público continua fechado.
+- Tail com corpo compacto, pernas normais e pés apoiados; mochila modular. Lucas, legionário, comandante e criaturas disponíveis no seletor de modelos do editor.
+- Proporções corrigidas: ratos imperiais ligeiramente maiores que o camundongo; esqueleto mais encorpado; centopeias maiores. O sapo ancião é um NPC, e o soldado representa os inimigos sapos.
+- Materiais dos modelos importados unificados ao toon shading, sombras mais marcantes e reações visuais de ataque e dano.
+- Praia com espuma e avanço/recuo mais orgânicos, conchas e vegetação que ajudam a comunicar a escala do personagem.
+- Fogueira recolhível e reposicionável, menu pelo botão direito, proteção da chuva sob coberturas, ajustes no porão e na visibilidade da carga do barco.
+- Cozinha por ingredientes, progressão de ofícios, temperatura e continuidade do combate cooperativo revisadas.
+- Carregamento inicial visível, preparação de modelos durante o menu, chat liberado apenas no jogo e opção de fechar na entrada.
+- Controle: L3/R3 giram em sentidos opostos, quadrado recolhe tudo do baú, navegação no inventário, teclado virtual e seleção na batalha tática.
+- Prévia de marketing das páginas Steam e Google Play em /store-preview/index.html. São simulações, sem publicação nessas lojas.
 
-O jogo continua em alpha. Os clipes Mixamo foram auditados e preparados para retarget; ainda não substituem a locomoção procedural. Estações, transição livre em grupo, revisão restante do barco e configuração remota dos e-mails continuam pendentes. Pesquisa e limites: [registro de retomada](../research/references-2026-11-04/README.md).
+Validação: 324 testes automatizados, compilação TypeScript e Vite, verificação da versão compilada no navegador, fluxo cooperativo com dois jogadores e controle simulado. Controle DualShock físico e o desempenho em todos os aparelhos ainda precisam de teste presencial. As animações dos novos personagens são básicas e continuarão recebendo refinamentos.

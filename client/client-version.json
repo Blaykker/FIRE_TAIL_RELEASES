@@ -1,6 +1,6 @@
 {
-  "version": "0.9.26",
-  "sourceRevision": "6f8fcfea9352d9cbd7e9ad62fdbf72f0e176305d",
-  "builtAt": "2026-11-04T19:41:40.752Z",
-  "notes": "Alpha 0.9.26 — Preparar, observar, agir: cozinha por ingredientes e tres beneficios; foco tatico com custo de estamina, vida e drops preservados; arco alinhado a mao, apoio dos pes independente de FPS; fogueiras e selecao no co-op corrigidas; hastes e sementes na escala do Tail."
+  "version": "0.9.28",
+  "sourceRevision": "0336fa2674f320b430015b0e2393136260f6e1c6",
+  "builtAt": "2026-11-05T23:45:14.068Z",
+  "notes": "Alpha 0.9.28 — Tail compacto com pernas normais, proporções e modelos novos em toon shading; controle e batalha cooperativa revisados; fogueira portátil, abrigo da chuva, praia e barco melhorados; prévias de lojas."
 }

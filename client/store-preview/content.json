@@ -1,0 +1,48 @@
+{
+  "name": "FIRE TAIL",
+  "developer": "2P CREATIVE GAME",
+  "version": "0.9.28",
+  "simulated": true,
+  "reviewed": "2026-11-05",
+  "tagline": "Um pequeno viajante. Um mundo que não espera.",
+  "short": "Explore uma ilha à escala de um camundongo. Reúna recursos, prepare refeições, enfrente criaturas e reconstrua seu caminho de volta ao mar.",
+  "tags": [
+    "Aventura",
+    "Sobrevivência",
+    "Cooperativo",
+    "Combate tático",
+    "Crafting"
+  ],
+  "screenshots": [
+    {
+      "file": "island.png",
+      "caption": "Captura real — a ilha e seus habitantes"
+    },
+    {
+      "file": "creatures.png",
+      "caption": "Captura real — criaturas em revisão de proporção"
+    },
+    {
+      "file": "hold.png",
+      "caption": "Captura real — exploração do naufrágio (0.9.27)"
+    }
+  ],
+  "about": [
+    {
+      "title": "Pequeno diante do mundo",
+      "text": "Entre folhas, conchas e destroços, o ambiente conta a história de quem vive perto do chão. Busque abrigo, cuide da chama e escolha por onde passar."
+    },
+    {
+      "title": "Prepare antes de partir",
+      "text": "Colete materiais, organize a mochila e cozinhe perto da fogueira. Ingredientes e equipamentos fazem parte da preparação para cada expedição."
+    },
+    {
+      "title": "Observe. Posicione-se. Aja.",
+      "text": "O protótipo combina exploração em tempo real e encontros táticos. Movimento, terreno e preparação importam tanto quanto o ataque."
+    },
+    {
+      "title": "Um alpha em construção",
+      "text": "Combate, animações, proporções e interface seguem em teste. As capturas mostram o protótipo atual; conteúdo, desempenho e disponibilidade podem mudar."
+    }
+  ]
+}

@@ -20,7 +20,7 @@
       "stepped": 1,
       "rainOut": 1,
       "wetDim": 0.6,
-      "shadow": "circle",
+      "shadow": "projected",
       "sparks": 1.7,
       "smoke": 0.7,
       "bands": 6,
@@ -392,7 +392,7 @@
       "objKnee": 0.6
     },
     "player": {
-      "model": "tail_v6"
+      "model": "tail_v7"
     },
     "aura": {
       "on": 1,
@@ -634,8 +634,8 @@
     },
     "ratShadow": {
       "height": 2.6,
-      "fade": 1.3,
-      "opacity": 0.42
+      "fade": 2.2,
+      "opacity": 0.58
     },
     "enemies": {
       "beetle": {
