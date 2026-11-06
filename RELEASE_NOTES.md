@@ -1,15 +1,16 @@
-# FIRE TAIL 0.9.28 — Escala, silhuetas e tripulação
+# FIRE TAIL 0.9.29 — Silhuetas, profundidade e combate
 
-Esta atualização reúne o trabalho posterior à versão pública 0.9.26.
+- Temperatura acima das barras do avatar; parte inferior reservada aos status. Ajustes no contador de flechas, atalhos dos slots, retratos e desafios do grupo.
+- Proporções dos modelos medidas pela cabeça, sem contar orelhas, capacetes ou armas. Lucas acompanha o camundongo; imperiais e esqueleto são maiores; centopeia alongada. Materiais importados recebem iluminação toon mais legível.
+- Sombra projetada reúne corpo e equipamentos numa silhueta única. Contorno preto dos atores e seleção branca exterior respeitam a profundidade. Correção do formato de profundidade/stencil e redução de tremulação visual.
+- Centopeia de cinco casas e serpente de oito: corpo segue a cabeça casa a casa, inclusive na sincronização cooperativa. Ataques pelas costas e em extremidades críticas recebem dado adicional. Nova carta de terra em linha, com prévia e efeito sequencial.
+- Game Over aguarda confirmação para renascer; o personagem morto fica parado enquanto o mundo continua. Criaturas se orientam para o alvo e cartas sem PA suficiente aparecem desativadas.
+- Praia com areia contínua sob as ondas, transição de água suavizada e marca de areia molhada. Fundo marinho com desníveis, baús submersos e aproximação na profundidade correta. Escavações guardam até oito níveis de profundidade no salvamento.
+- Ajustes no porão, ocultação da carga superior, marcador luminoso de reparo e exclusão de objetos naturais da fogueira. Baús podem ser recolhidos e reposicionados; colocação permite rotação.
+- Ferramentas do tutorial ficam posicionadas desde o início. A primeira coleta conduz ao inventário e à ação de equipar.
+- Entrada com vinheta SP e carregamento da ilustração da escada; modelos e shaders são preparados antes do menu. Isso concentra a espera inicial e reduz trabalho durante as transições.
+- Controle: L1/R1 alternam abas, analógico esquerdo move a câmera na batalha, direito seleciona, R2 confirma; PS e touchpad deixam de abrir inventário. Fechar jogo aparece somente na página inicial.
 
-- Tail com corpo compacto, pernas normais e pés apoiados; mochila modular. Lucas, legionário, comandante e criaturas disponíveis no seletor de modelos do editor.
-- Proporções corrigidas: ratos imperiais ligeiramente maiores que o camundongo; esqueleto mais encorpado; centopeias maiores. O sapo ancião é um NPC, e o soldado representa os inimigos sapos.
-- Materiais dos modelos importados unificados ao toon shading, sombras mais marcantes e reações visuais de ataque e dano.
-- Praia com espuma e avanço/recuo mais orgânicos, conchas e vegetação que ajudam a comunicar a escala do personagem.
-- Fogueira recolhível e reposicionável, menu pelo botão direito, proteção da chuva sob coberturas, ajustes no porão e na visibilidade da carga do barco.
-- Cozinha por ingredientes, progressão de ofícios, temperatura e continuidade do combate cooperativo revisadas.
-- Carregamento inicial visível, preparação de modelos durante o menu, chat liberado apenas no jogo e opção de fechar na entrada.
-- Controle: L3/R3 giram em sentidos opostos, quadrado recolhe tudo do baú, navegação no inventário, teclado virtual e seleção na batalha tática.
-- Prévia de marketing das páginas Steam e Google Play em /store-preview/index.html. São simulações, sem publicação nessas lojas.
+Verificação: 335 testes automatizados e checagem TypeScript. A compilação, o navegador e o fluxo cooperativo são conferidos antes da publicação.
 
-Validação: 324 testes automatizados, compilação TypeScript e Vite, verificação da versão compilada no navegador, fluxo cooperativo com dois jogadores e controle simulado. Controle DualShock físico e o desempenho em todos os aparelhos ainda precisam de teste presencial. As animações dos novos personagens são básicas e continuarão recebendo refinamentos.
+Limites desta entrega: profundidade é representada por alturas e escavações em camadas, sem túneis volumétricos arbitrários abaixo do nível zero. Animações continuam básicas. Safari/Mac e DualShock físico precisam de validação presencial; os testes automatizados usam Edge e controle simulado. A espera inicial depende do aparelho e não foi medida em hardware do jogador. As páginas Steam/Google Play continuam sendo prévias, sem publicação nas lojas.
