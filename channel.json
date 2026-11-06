@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "version": "0.9.28",
-  "notes": "Alpha 0.9.28 \u2014 Tail compacto com pernas normais, propor\u00e7\u00f5es e modelos novos em toon shading; controle e batalha cooperativa revisados; fogueira port\u00e1til, abrigo da chuva, praia e barco melhorados; pr\u00e9vias de lojas.",
+  "version": "0.9.29",
+  "notes": "Alpha 0.9.29 \u2014 temperatura acima das barras; silhueta completa e ilumina\u00e7\u00e3o toon; escala dos modelos, praia e profundidade; controle, tutorial, Game Over e combate segmentado cooperativo revisados",
   "payload": {
     "kind": "web",
-    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.28/Fire-Tail-Client-0.9.28.zip",
-    "sha256": "ae6196daf93462da19390060da7e11b338988cc4b7639b702029faab5b0f6423",
-    "size": 353785061,
+    "url": "https://github.com/Blaykker/FIRE_TAIL_RELEASES/releases/download/v0.9.29/Fire-Tail-Client-0.9.29.zip",
+    "sha256": "fbba56015b1ad68c2b1e76804efc3e17c051758e7f2e6dae6195915f5cf057c5",
+    "size": 353819098,
     "entrypoint": "index.html"
   }
 }
